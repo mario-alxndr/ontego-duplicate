@@ -1,0 +1,14 @@
+.nav_submenu{
+  font-family: Capitolium2;
+  color: #2d333d;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 26px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.nav_submenu:hover{
+  cursor: pointer;
+  border-bottom: 2px solid #0e75c4;
+}

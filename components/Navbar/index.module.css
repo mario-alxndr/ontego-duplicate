@@ -1,0 +1,67 @@
+.top_nav_bar_container {
+  width: 100%;
+  height: 48px;
+  background: linear-gradient(210.75deg, #0077b6 0%, #00527f 100%);
+  display: flex;
+  justify-content: center;
+}
+
+.top_nav_bar {
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: max-content auto max-content;
+  align-items: center;
+}
+
+.nav_menu_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.request_demo_button {
+  overflow: hidden;
+  height: 32px;
+  min-width: 150px;
+  width: 100%;
+  font-size: 12px;
+  line-height: 29px;
+  font-weight: normal;
+  border-width: 1px;
+  border: 2px solid #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-left: 16px;
+  background: linear-gradient(#ffffff 0 0) no-repeat;
+  background-size: 0%;
+  transition: .3s;
+}
+
+.request_demo_caption {
+  color: #ffffff;
+}
+
+.request_demo_button:hover {
+  background-size: 100%;
+  transition: .3s;
+}
+
+.request_demo_arrow  {
+  background: url('https://ontego.de/images/commsult/graphic/arrow_white.svg');
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.request_demo_button:hover 
+  p {
+  color: #0077b6;
+}
+
+.request_demo_button:hover
+  .request_demo_arrow {
+    background: url('https://ontego.de/images/commsult/graphic/arrow_blue.svg');
+    background-repeat: no-repeat;
+    content: "";
+}

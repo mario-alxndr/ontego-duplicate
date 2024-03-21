@@ -1,0 +1,14 @@
+.nav_item{
+  color: #383d47;
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 0.2px;
+  cursor: pointer;
+}
+
+.nav_item:hover{
+  color: #0077b6;
+  cursor: pointer;
+  font-weight: bold;
+}
