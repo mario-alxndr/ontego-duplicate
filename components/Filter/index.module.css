@@ -58,3 +58,14 @@
 .toggle_button {
   margin-left: 24px;
 }
+
+/* transition doesn't run */
+.additional_filter {
+  height: auto;
+  transition: height 1s ease-out;
+}
+
+.additional_filter.hide {
+  height: 0px;
+  visibility: hidden;
+}
