@@ -80,12 +80,16 @@ export const NavBar = () => {
         </div>
       </div>
       <div
-        className={styles.bot_nav_bar_container}
+        className={
+          activeMenu && activeMenu === 'Products'
+            ? styles.bot_nav_bar_container_active
+            : styles.bot_nav_bar_container
+        }
         onMouseEnter={() => setActiveMenu(activeMenu)}
         onMouseLeave={() => setActiveMenu('')}
       >
         <div className={styles.bot_nav_bar}>
-          <div className={styles.bot_logo}>
+          <div className={activeMenu ? styles.bot_logo_active :  styles.bot_logo}>
             <Image
               src="https://ontego.de/images/commsult/logos/Ontego_subline.svg"
               alt="logo"
@@ -105,7 +109,7 @@ export const NavBar = () => {
                       {item.submenu.map((subitem, subindex) => (
                         <div
                           key={subindex + subitem.subMenu}
-                          className={styles.submenu}
+                          className={activeMenu ? styles.vertical_submenu : styles.submenu}
                         >
                           <NavSubmenu
                             key={subindex + subitem.subMenu}
@@ -123,13 +127,37 @@ export const NavBar = () => {
                           >
                             {subitem.subMenu}
                           </NavSubmenu>
-                          {activeSubMenu === subitem.subMenu && (
+                          {activeMenu && (
+                            <div
+                              className={
+                                styles.nav_menu_item_vertical_container
+                              }
+                              onMouseEnter={() =>
+                                setActiveSubMenu(subitem.subMenu)
+                              }
+                              onMouseLeave={() => {
+                                setActiveSubMenu('');
+                              }}
+                            >
+                              {subitem.item.map((item, index) => (
+                                <NavItem
+                                  key={index + item.item}
+                                  href={item.link}
+                                >
+                                  {item.item}
+                                </NavItem>
+                              ))}
+                            </div>
+                          )}
+                          {!activeMenu && activeSubMenu === subitem.subMenu && (
                             <div
                               className={styles.nav_menu_item_container}
                               onMouseEnter={() =>
                                 setActiveSubMenu(activeSubMenu)
                               }
-                              onMouseLeave={() => setActiveSubMenu('')}
+                              onMouseLeave={() => {
+                                setActiveSubMenu('');
+                              }}
                             >
                               {navMenu
                                 .find(
