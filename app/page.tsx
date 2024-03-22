@@ -1,6 +1,9 @@
+// Node Modules
+import Head from 'next/head'
+
 // Component
-import { NavBar } from '../components/Navbar/index';
-import Image from 'next/image';
+import { Footer } from '@/components/Footer';
+import { NavBar } from '@/components/Navbar/index';
 
 // Styles
 import styles from './page.module.css';
@@ -24,6 +27,7 @@ export default function Home() {
         warehouse logistics, maintenance or delivery. We give you an overview of mobile<br/>
         hardware from handheld computers to mobile scanners, forklift terminals and <br/>
         tablets to robust smartphones and mobile printers.</p>
+      <Footer />
     </main>
   );
 }
