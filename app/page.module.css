@@ -261,6 +261,30 @@
   }
 }
 
+@media (max-width: 760px) {
+  .top_figure {
+    display: block;
+  }
+  
+  .title_popup {
+    margin: 0 auto;
+  }
+  
+  .image_wrapper {
+    width: 100%;
+  }
+
+  .image_content {
+    margin: 0 auto;
+    position: relative;
+    left: 0px;
+  }
+
+  .image_content::before {
+    opacity: 0;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   .vercelLogo {
     filter: invert(1);
