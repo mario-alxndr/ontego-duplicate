@@ -13,7 +13,16 @@
   align-items: center;
 }
 
-.nav_menu:hover {
+.nav_menu_active {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  width: 140px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   color: #0077b6;
   background-color: #ffffff;

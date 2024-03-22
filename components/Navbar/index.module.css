@@ -10,8 +10,9 @@
   width: 100%;
   max-width: 1200px;
   display: grid;
-  grid-template-columns: max-content auto max-content;
+  grid-template-columns: max-content max-content max-content;
   align-items: center;
+  justify-content: space-between;
 }
 
 .nav_menu_container {
@@ -64,4 +65,60 @@
     background: url('https://ontego.de/images/commsult/graphic/arrow_blue.svg');
     background-repeat: no-repeat;
     content: "";
+}
+
+.nav_bar {
+  width: 100%;
+}
+
+.top_logo {
+  padding: 11px 15px;
+}
+
+.bot_nav_bar_container {
+  width: 100%;
+  box-shadow: 0 20px 29px 0 rgba(0, 0, 0, 0.15);
+  background: #ffffff;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  height: 93px;
+  display: flex;
+  justify-content: center;
+}
+
+.bot_nav_bar {
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: max-content auto;
+  align-items: center;
+  justify-content: stretch;
+}
+
+.nav_submenu_container {
+  place-self: start;
+}
+
+.bot_logo {
+  padding: 0px 15px 0 75px;
+}
+
+.nav_submenu {
+  display: flex;
+  align-items: start;
+}
+
+.submenu {
+  padding-left: 100px;
+  height: 35px;
+  position: relative;
+}
+
+.nav_menu_item_container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: absolute;
+  padding-top: 10px;
+  min-width: 2000px
 }
