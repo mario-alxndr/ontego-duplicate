@@ -1,9 +1,7 @@
-// Node Modules
-import Head from 'next/head'
-
 // Component
-import { Footer } from '@/components/Footer';
 import { NavBar } from '@/components/Navbar/index';
+import { Body } from '@/components/Body';
+import { Footer } from '@/components/Footer';
 
 // Styles
 import styles from './page.module.css';
@@ -26,7 +24,9 @@ export default function Home() {
         Mobile applications are now part of everyday life in companies: in production,<br/> 
         warehouse logistics, maintenance or delivery. We give you an overview of mobile<br/>
         hardware from handheld computers to mobile scanners, forklift terminals and <br/>
-        tablets to robust smartphones and mobile printers.</p>
+        tablets to robust smartphones and mobile printers.
+      </p>
+      <Body />
       <Footer />
     </main>
   );
