@@ -50,6 +50,8 @@ export const Body = () => {
     setSelectedDeviceType([]);
     setSelectedManufacturer([]);
     setSelectedOperationArea([]);
+    setPrice([0, 3500]);
+    setWeight([0, 1300]);
   }
 
   const handleChangePrice = (newValue: number[]) => {
@@ -89,6 +91,16 @@ export const Body = () => {
           }).length > 0 ? true : false 
         : true;
 
+      // Price
+      const isInRangePrice = 
+        productRecord.price >= price[0] && 
+        productRecord.price <= price[1];
+
+      // Weight
+      const isInRangeWeight =
+        productRecord.weight >= weight[0] && 
+        productRecord.weight <= weight[1];
+
       if(
         // Selection Filter
         isMatchSelection &&
@@ -100,7 +112,13 @@ export const Body = () => {
         isMatchDevice &&
 
         // Operation Area Filter
-        isMatchOperationArea
+        isMatchOperationArea &&
+
+        // Price
+        isInRangePrice &&
+
+        // Weight
+        isInRangeWeight
       ) {
         return productRecord;
       }
@@ -110,6 +128,8 @@ export const Body = () => {
     JSON.stringify(selectedDeviceType),
     JSON.stringify(selectedManufacturer),
     JSON.stringify(selectedOperationArea),
+    JSON.stringify(price),
+    JSON.stringify(weight)
   ]);
 
   return (

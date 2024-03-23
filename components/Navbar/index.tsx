@@ -67,10 +67,8 @@ export const NavBar = () => {
             <p className={styles.request_demo_caption}>
               Request a demo
             </p>
-            <img
+            <div
               className={styles.request_demo_arrow}
-              width={30}
-              height={18}
             />
           </div>
         </div>

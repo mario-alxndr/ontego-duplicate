@@ -1,4 +1,35 @@
+.input_range_container {
+  width: 400px;
+  text-align: center;
+}
+
+.input_range_title {
+  color: #2D333D;
+  font-family: Capitolium2;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 28px;
+}
+
 .input_range_wrapper {
-  width: 150px;
   padding: 15px;
+  display: flex;
+  gap: 12px;
+}
+
+.input_max,
+.input_min {
+  background-color: #fff;
+}
+
+.input_min,
+.input_max,
+.format {
+  align-self: center;
+  color: #2D333D;
+  font-family: Roboto;
+  letter-spacing: 0.16px;
+  font-weight: normal;
+  font-size: 12px;
+  padding: 3px;
 }

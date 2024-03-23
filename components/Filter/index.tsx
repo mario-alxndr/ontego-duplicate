@@ -180,6 +180,7 @@ export const Filter = (props: TFilter) => {
         </div>
         <div className={styles.filter_range_container}>
           <InputRange 
+            format={'€'}
             min={0}
             max={3500}
             step={20}
@@ -188,6 +189,7 @@ export const Filter = (props: TFilter) => {
             title={'Price'}
           />
           <InputRange 
+            format={'G'}
             min={35}
             max={1300}
             step={20}

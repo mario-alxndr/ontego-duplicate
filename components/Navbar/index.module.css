@@ -53,6 +53,8 @@
   background: url('https://ontego.de/images/commsult/graphic/arrow_white.svg');
   background-repeat: no-repeat;
   content: "";
+  width: 30px;
+  height: 18px;
 }
 
 .request_demo_button:hover 
