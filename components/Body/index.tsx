@@ -8,7 +8,7 @@ import { Filter } from '../Filter';
 import { ListItem } from '../ListItem';
 
 // Data
-import { productListConfig } from '@/app/scrappedData';
+import { productListConfig } from '@/lib/data/scrappedData';
 
 // Styles
 import styles from './index.module.css';

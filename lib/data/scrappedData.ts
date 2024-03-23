@@ -15,6 +15,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: true,
     isRentalAvailable: true,
     operationArea: ['Warehouse & Production'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Casio DT-X450',
@@ -27,9 +28,10 @@ export const productListConfig: TProduct[] = [
       'Mit der DT-X400er Serie bringt Casio seine ersten Android-Geräte auf den Markt. Das Gerät liegt gut in der Hand dank durchdachtem Handgriff und gummierter Oberfläche. Das Touchdisplay ist etwas klein ausgefallen, dafür kommen Freunde tastaturgestützter Eingabe auf ihre Kosten.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2003011650/2012441964/casio_dt-x400@2x.png',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Zebra MC3300X',
@@ -45,6 +47,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: true,
     isRentalAvailable: true,
     operationArea: ['Warehouse & Production', 'Field Service'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'CAT S53',
@@ -57,9 +60,10 @@ export const productListConfig: TProduct[] = [
       'Modern und robust: Das Gerät ist leistungsfähiger als seine Vorgänger und verfügt über Android 11, 6 GB RAM und 128 GB Speicher. Anzumerken ist die Bildschirmhelligkeit, welche weiterhin bei direkter Sonneneinstrahlung verbesserungswürdig ist.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2003436729/2012441964/CAT S53.png',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Beverage logistics'],
+    deviceType: ['Smartphone'],
   },
   {
     productName: 'Zebra ET40/45',
@@ -73,8 +77,9 @@ export const productListConfig: TProduct[] = [
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2004413200/2012441964/Zebra ET45_ET40.png',
     isFavorite: true,
-    isRentalAvailable: true,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'maintenance', 'Field Service'],
+    deviceType: ['Forklift terminal/table'],
   },
   {
     productName: 'Datalogic Memor 11',
@@ -87,9 +92,10 @@ export const productListConfig: TProduct[] = [
       'Das Memor 11 von Datalogic ist ein performantes Gerät für Lager- und Field Service-Anwendungen. Die technischen Parameter überzeugen, das Android-System ist aktuell. Das Gerät tritt in seiner Klasse gegen das CT60XP von Honeywell oder das TC52x von Zebra an.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2004895232/2012441964/datalogic_memor10@2x.jpg',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Field Service'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Bixolon SPP-R310',
@@ -102,9 +108,10 @@ export const productListConfig: TProduct[] = [
       'Der handliche Etikettendrucker von Bixolon bietet eine preisgünstige Alternative zu dem Zebra ZQ511. Er überzeugt mit seiner Kompaktheit und der langen Akkulaufzeit.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2011864198/2012441964/Bixolon SPP R310.png',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Beverage logistics', 'maintenance', 'Field Service'],
+    deviceType: ['Printer']
   },
   {
     productName: 'Point Mobile PM5',
@@ -117,9 +124,10 @@ export const productListConfig: TProduct[] = [
       'Das Point Mobile PM5 ist ein kompakter und leichter Ringscanner. Er überzeugt mit hoher Scan-Leistung und -Geschwindigkeit. Der Akku hält standardmäßig 9 Stunden; die Einsatzdauer kann mit einem Zusatz-Akku erweitert werden.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2012518994/2012441964/Point Mobile PM5.png',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production'],
+    deviceType: ['Wearable/handheld scanner']
   },
   {
     productName: 'Zebra MC2700',
@@ -132,9 +140,10 @@ export const productListConfig: TProduct[] = [
       'Die jüngste Geräteklasse von Zebra ist ein vergleichsweise günstiges Gerät mit guten Leistungsmerkmalen - abhängig von der Modellvariante - und einer 34-Tasten-Hardware-Tastatur. Neu ist die „PRZM-Intelligent-Imaging“-Technologie, mit der auch beschädigte Barcodes gelesen werden können. Das MC2700 ist dank Mobilfunkfähigkeit für den Einsatz im Außenbereich geeignet.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2012669047/2012441964/ZebraMC2700.png',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Beverage logistics'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Zebra RS6100',
@@ -147,9 +156,10 @@ export const productListConfig: TProduct[] = [
       'Der Ringscanner RS6100 von Zebra ist ein Werkzeug für scanintensive Prozesse in der Lagerlogistik. Das Wearable kann am Finger, auf einem Handschuh montiert, auf dem Handrücken oder an einem Halsband getragen werden. Mit dem neuen Scanmodul kann eine Reichweite von 12m erreicht werden.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2015395946/2012441964/Zebra RS6100.png',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production'],
+    deviceType: ['Wearable/handheld scanner']
   },
   {
     productName: 'Point Mobile PM75',
@@ -162,9 +172,10 @@ export const productListConfig: TProduct[] = [
       'Das PM75 kommt mit neuster Ausstattung und Software. Es ist ein sehr praktikables Gerät welches vielseitig eingesetzt werden kann und das für einen relativ günstigen Preis. Die Auswahl zwischen zwei hochwertigen Honeywell Scan Engins und einem extra Zusatz Akku ist hier ein Vorteil.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2015462482/2012441964/PointMobilePM75.png',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Beverage logistics'],
+    deviceType: ['Smartphone']
   },
   {
     productName: 'Cipherlab RS36',
@@ -177,9 +188,10 @@ export const productListConfig: TProduct[] = [
       'Robuster Touchcomputer der Mittelklasse. Angeboten wird das Gerät mit optionalen Scan-Engines für unterschiedliche Einsatzzwecke. Programmierbare Funktionstasten ermöglichen individuelle Optimierungen. Prägnant durch eine starke Akkuleistung und einer Scanreichweite von bis zu 12 m. Eine Alternative zu den etablierten Herstellern.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2016244565/2012441964/Cipherlab RS36.png',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'maintenance'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Zebra WS50',
@@ -193,8 +205,9 @@ export const productListConfig: TProduct[] = [
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2016631942/2012441964/zebra ws50.png',
     isFavorite: true,
-    isRentalAvailable: true,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'maintenance'],
+    deviceType: ['Wearable/handheld scanner']
   },
   {
     productName: 'ACD HasciSE',
@@ -207,9 +220,10 @@ export const productListConfig: TProduct[] = [
       'Der HasciSE eignet sich ideal für Arbeitsabläufe, bei welchen beide Hände ermüdungsfrei gebraucht werden. Das Scanner-Modul ist ein Leichtgewicht und kann an einer Handmanschette, Handschuh oder einer herausziehbaren Spule befestigt werden. Es ist zudem robust und passt daher hervorragend in industrielle Umgebungen.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2017010790/2012441964/ACD HasciSE.png',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production'],
+    deviceType: ['Wearable/handheld scanner']
   },
   {
     productName: 'Casio ET-L10',
@@ -223,8 +237,9 @@ export const productListConfig: TProduct[] = [
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2017181285/2012441964/casio_et_l10@2x.jpg',
     isFavorite: true,
-    isRentalAvailable: true,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Beverage logistics', 'Field Service'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Honeywell ScanPal EDA10A',
@@ -238,8 +253,9 @@ export const productListConfig: TProduct[] = [
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2017246317/2012441964/Honeywell ScanPal EDA10A.png',
     isFavorite: true,
-    isRentalAvailable: true,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'maintenance', 'Field Service'],
+    deviceType: ['Forklift terminal/table']
   },
   {
     productName: 'Point Mobile PM30',
@@ -252,9 +268,10 @@ export const productListConfig: TProduct[] = [
       'Das PM30 ist ein kostengünstiges Industrie Smartphone der Marke Point Mobile. Es hat neue Software und Hardware, welche ausreichend für viele Tätigkeiten ist. Positiv ist hier der erweiterbare Akku, wodurch die Laufzeit sehr gut ausfallen kann. Das Gerät ist trotz des eher niedrigeren Preises robust und gut gegen Staub und Wasser geschützt.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2017832970/2012441964/ponit_mobilePM30.png',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Beverage logistics', 'Field Service'],
+    deviceType: ['Smartphone']
   },
   {
     productName: 'Samsung Xcover 5',
@@ -268,8 +285,9 @@ export const productListConfig: TProduct[] = [
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2018426427/2012441964/Samsung Xcover 5.png',
     isFavorite: true,
-    isRentalAvailable: true,
+    isRentalAvailable: false,
     operationArea: ['Beverage logistics'],
+    deviceType: ['Smartphone']
   },
   {
     productName: 'i.Safe Mobile IS530.1 ',
@@ -282,9 +300,10 @@ export const productListConfig: TProduct[] = [
       'Das leistungsfähige Industrie-Smartphone ist durch die ISM-Schnittstelle vielfältig einsetzbar. Verschiedene Zusatzmodule und die extrem hohe Widerstandsfähigkeit machen es zu einem einzigartigen hochleistungsfähigen Multifunktionsgerät, insbesondere für die Chemieindustrie.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2018904232/2012441964/i.Safe IS530.1 mit Pistolengriff.png',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Explosion-proof'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Honeywell ScanPal EDA61K',
@@ -297,9 +316,10 @@ export const productListConfig: TProduct[] = [
       'Das EDA61K aus der Scanpal-Reihe – für kleinere und mittelgroße Unternehmen. Neben der leistungsfähigen Long-Range-Scan-Engine EX20 wird LTE unterstützt, so dass es in einem Außenlager ohne WLAN-Ausleuchtung zum Einsatz kommen kann. Das 34- oder 47-Tasten-Keyboard unterstützt die Datenerfassung in rauen Umgebungen.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2020025177/2012441964/honeywell_scanpal_eda61k@2x.jpg',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Beverage logistics'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Samsung Tab Active 3',
@@ -313,8 +333,9 @@ export const productListConfig: TProduct[] = [
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2022407552/2012441964/Samsung Tab Active 3.png',
     isFavorite: true,
-    isRentalAvailable: true,
-    operationArea: ['maintenance', 'Field Service']
+    isRentalAvailable: false,
+    operationArea: ['maintenance', 'Field Service'],
+    deviceType: ['Forklift terminal/table']
   },
   {
     productName: 'ProGlove MARK 3',
@@ -327,9 +348,10 @@ export const productListConfig: TProduct[] = [
       'Die Münchner Workaround GmbH hat mit der ProGlove-Serie die ersten industrietauglichen Wearables auf den Markt gebracht. Die Handscanner eignen sich insbesondere für Prozesse mit hoher Scan-Frequenz. Ein Laserzielkreuz erleichtert die Erfassung von Barcodes. Der MARK 3 lässt sich separat betreiben bzw. zusammen mit Android- oder iOS-Mobilgeräten nutzen.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2023937341/2012441964/ProGlove MARK 3.png',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production'],
+    deviceType: ['Wearable/handheld scanner']
   },
   {
     productName: 'Datalogic Memor 20',
@@ -342,9 +364,10 @@ export const productListConfig: TProduct[] = [
       'Das Memor 20 ist das robusteste Industrie-Handheld des Herstellers. Es ist IP65 und 67 zertifiziert und eignet sich für den Einsatz unter rauen Bedingungen. Dank LTE-Unterstützung mit 2 Sim-Karten-Slots lässt es sich im Field Service einsetzen. Die Scan-Engine ermöglicht Scannen im Nahbereich. Der Einsatz ist zwischen -20 bis 50° Celsius vorgesehen.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2025004846/2012441964/datalogic_memor20@2x.jpg',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Field Service'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Datalogic Memor 10 Healthcare',
@@ -357,9 +380,10 @@ export const productListConfig: TProduct[] = [
       'Das Memor 10 in der Healthcare-Variante ist ein performantes Gerät für Anwendungen im Gesundheitswesen. Die technischen Parameter überzeugen, das Gerät wird mit Android 8.1 ausgeliefert. Es ist beständig gegen Desinfektionsmittel und gemäß IP65 zertifiziert.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2028350172/2012441964/datalogic_memor10_healthcare@2x.jpg',
-    isFavorite: true,
-    isRentalAvailable: true,
-    operationArea: ['Healthcare']
+    isFavorite: false,
+    isRentalAvailable: false,
+    operationArea: ['Healthcare'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Casio IT-G600 / IT-G650',
@@ -372,9 +396,10 @@ export const productListConfig: TProduct[] = [
       'Die IT-G6xx-Geräte bilden die Flaggschiff-Reihe von Casio. Das IT-G600 verfügt über eine physische 10-er Tastatur, das IT-G650 ist die Full-Touch-Alternative. Beide Modellvarianten verfügen über eine performante Ausstattung und Android 9 als Betriebssystem. Die geneigte Scan-Ergonomie unterscheidet das Gerät von anderen Devices seiner Klasse.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2030145514/2012441964/Casio IT G600_650.png',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Point Mobile PM560',
@@ -387,9 +412,10 @@ export const productListConfig: TProduct[] = [
       'Ein klassisches Handheld für die Lagerlogistik mit einem guten Preis-Leistungs-Verhältnis. Die Scan-Engine liefert Honeywell, die physische Tastatur ergänzt die Bedienung am Touchscreen. Zahlreiche nützliche Software-Tools werden ab Werk mitgeliefert.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2034482939/2012441964/Point Mobile PM560.png',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Field Service'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Gigaset GX290 Plus',
@@ -402,9 +428,10 @@ export const productListConfig: TProduct[] = [
       'Das Gigaset GX290 ist ein kostengünstiges und robustes Smartphone, was jegliche Einwirkungen von Außen gut wegsteckt und mit einem modernen Design überzeugt. Durch den großen Akku ist es zudem auch sehr gut für längere Schichten und Touren geeignet.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2035087401/2012441964/Gigaset GX290 plus.png',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Beverage logistics'],
+    deviceType: ['Smartphone']
   },
   {
     productName: 'Honeywell Dolphin CK65',
@@ -418,8 +445,9 @@ export const productListConfig: TProduct[] = [
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2035734119/2012441964/Honeywell Dolphin CK65.png',
     isFavorite: true,
-    isRentalAvailable: true,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Explosion-proof'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'CAT S75',
@@ -432,9 +460,10 @@ export const productListConfig: TProduct[] = [
       'Das CAT S75 ist ein großes schlankes Outdoor-Smartphone, welches modernes Design und Robustheit vereint. Es ist im Healthcare Sektor durch die Resistenz gegen Desinfektionsmittel und weitere intensive Reinigungen einzusetzen.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2036388291/2012441964/CAT S75.png',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Beverage logistics', 'Healthcare'],
+    deviceType: ['Smartphone']
   },
   {
     productName: 'Honeywell ScanPal EDA52 HC',
@@ -447,9 +476,10 @@ export const productListConfig: TProduct[] = [
       'Mit dem schlanken ScanPal EDA52 HC bietet Honeywell ein günstiges Gerät für den Einsatz im Gesundheitswesen. Die Lebensdauer ist auf 3 Jahre ausgelegt. In dieser Zeit besitze das EDA52 laut Hersteller die Desinfektionsbeständigkeit.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2036806814/2012441964/Honeywell EDA52HC.png',
-    isFavorite: true,
-    isRentalAvailable: true,
-    operationArea: ['Healthcare']
+    isFavorite: false,
+    isRentalAvailable: false,
+    operationArea: ['Healthcare'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'ProGlove MARK Display',
@@ -462,9 +492,10 @@ export const productListConfig: TProduct[] = [
       'Arbeitsprozesse in industriellen Umgebungen, in Transport und Logistik oder auch im Handel lassen sich mithilfe der praktischen Datenerfassung deutlich erleichtern. Eine einfache Bedienung mit klarem Feedback und Arbeiten mit freien Händen ermöglichen schnellere Abläufe im Betrieb, z. B. in der Kommissionierung.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2038365215/2012441964/ProGlove Mark Display.png',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production'],
+    deviceType: ['Wearable/handheld scanner']
   },
   {
     productName: 'Datalogic Memor K',
@@ -477,9 +508,10 @@ export const productListConfig: TProduct[] = [
       'Datalogic bietet mit dem Memor K ein vergleichsweise kleines Industrie-Handheld zur Unterstützung mobiler Prozesse in Lager, Produktion oder Auslieferlogistik. Eine physische Tastatur mit 24 Tasten ergänzt die Bedienung über den Touchscreen.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2038742226/2012441964/Datalogic Memor K.png',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Beverage logistics'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Panasonic Toughbook S1',
@@ -492,9 +524,10 @@ export const productListConfig: TProduct[] = [
       'Das Toughbook S1 von Panasonic ist ein moderner und extrem robuster Tabletcomputer. Er eignet sich daher gut für industrielle Umgebungen und den Einsatz im Außendienst. Der Akku ist seine klare stärke, da dieser bis zu 14 Stunden hält und schnell durch einen Ersatz Akku ausgetauscht werden kann.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2038944939/2012441964/Panasonic Toughbook S1.png',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'maintenance', 'Field Service'],
+    deviceType: ['Forklift terminal/table']
   },
   {
     productName: 'Honeywell Dolphin CT60 XP',
@@ -508,8 +541,9 @@ export const productListConfig: TProduct[] = [
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2039480267/2012441964/honeywell_dolphin_ct60@2x.png',
     isFavorite: true,
-    isRentalAvailable: true,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Field Service'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Keyence BT-A700',
@@ -523,8 +557,9 @@ export const productListConfig: TProduct[] = [
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2041705648/2012441964/Keyence BT-A700.png',
     isFavorite: true,
-    isRentalAvailable: true,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Feig HyWEAR compact xT',
@@ -537,9 +572,10 @@ export const productListConfig: TProduct[] = [
       'HyWEAR compact ist ein hybrides Barcode & RFID (optional) Wearable, welches durch beidhändiges Arbeiten logistische Prozesse effizienter macht und eine gute Alternative zum Proglove Handscanner bietet.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2043918401/2012441964/Feig HyWear compact xT.png',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production'],
+    deviceType: ['Wearable/handheld scanner']
   },
   {
     productName: 'Panasonic Toughbook A3',
@@ -552,9 +588,10 @@ export const productListConfig: TProduct[] = [
       'Ein performantes und sehr robustes Tablet für den Außeneinsatz liefert Panasonic mit dem FZ-A3. Der entspiegelte Screen ist im Freien sehr gut lesbar. Der optionale Einsatz von Scanner oder SmartCard-Reader machen das Gerät sehr flexibel. Auch ist es für den Einsatz auf Staplern geeignet.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2043949983/2012441964/panasonic_fz-a3@2x.jpg',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['maintenance', 'Field Service'],
+    deviceType: ['Forklift terminal/table']
   },
   {
     productName: 'Zebra TC8300',
@@ -567,9 +604,10 @@ export const productListConfig: TProduct[] = [
       'Ein innovatives Design mit geneigtem Barcode-Scanner macht das TC8300 von Zebra zu einem außergewöhnlichen Gerät. Die aktuelle Version verfügt über einen schnellen Prozessor sowie einen leistungsstarken Akku mit 7.000 mAh.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2044520301/2012441964/zebra_tc8300@2x.jpg',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Zebra MC9300',
@@ -582,9 +620,10 @@ export const productListConfig: TProduct[] = [
       'Das MC9300 ist ein sehr robustes Gerät. Verschiedene Konfigurationen ermöglichen einen passgenauen Einsatz in rauen Umgebungen. Leider bietet Zebra keine Mobilfunk-Option, damit wäre das Gerät das ideale Terminal im Außenlager.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2051671743/2012441964/zebra mc9300.png',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'i.Safe Mobile IS655.2',
@@ -597,9 +636,10 @@ export const productListConfig: TProduct[] = [
       'Von dem Spezialisten für Ex-geschützte Industriegeräte i.Safe Mobile gibt es nun auch ein Smartphone-Gerät. Dieses eignet sich etwa für den Einsatz in der Auslieferung, vor allem im Chemiebereich und weist Schutz für die Explosions-Zone 2 auf.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2052054549/2012441964/i.safe IS655.2.png',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Beverage logistics', 'Explosion-proof'],
+    deviceType: ['Smartphone']
   },
   {
     productName: 'Zebra ZQ521',
@@ -612,9 +652,10 @@ export const productListConfig: TProduct[] = [
       'Der ZQ521 ist das jüngste Modell der ZQ-Reihe von Zebra. Neben klassischem Beleg- und Labeldruck ist der ZQ521 laut Zebra der einzige 4 Zoll Drucker auf dem Markt, der auch RFID-Etiketten drucken kann. Zebra hat einige Leistungsdaten verbessert, darunter Akku- und interne Speicherkapazität. Unterstützt wird daneben der jüngste Bluetooth-Standard.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2052768094/2012441964/Zebra ZQ521.png',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Beverage logistics', 'maintenance', 'Field Service'],
+    deviceType: ['Printer']
   },
   {
     productName: 'Point Mobile PM351',
@@ -627,9 +668,10 @@ export const productListConfig: TProduct[] = [
       'Das Point Mobile PM351 ist ein kompakter, preisgünstiger mobil Computer. Scanner, Tastatur und LTE Fähigkeit können passend gewählt werden. Zubehör, wie ein Pistolengriff sind verfügbar.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2053890576/2012441964/PM351.png',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Point Mobile PM86',
@@ -642,9 +684,10 @@ export const productListConfig: TProduct[] = [
       'Das PM86 ist im Vergleich zum Vorgänger dem PM85 von Point Mobile baugleich, mit neuer Hardware und größerem Akku ausgestattet. Hierbei ist die Möglichkeit zwischen 3 Scan-Engines zu wählen mit optional erweiterter Reichweite. Positiv auffällig ist hier, wie auch beim Vorgänger das helle Display.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2053950471/2012441964/Point Mobile Pm86.png',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Beverage logistics'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Zebra ET60/ET65 Tablet',
@@ -657,9 +700,10 @@ export const productListConfig: TProduct[] = [
       'Die neue ET60 Reihe von Zebra lässt sich als Fahrzeug-Terminal oder mobiler Computer mit abnehmbarer Tastatur einsetzen. Das ET60 bzw. ET65 (mit LTE) kann in einem Temperaturbereich von -30°C bis +60°C eingesetzt werden. In der Freezer-Version mit beheiztem Bildschirm ist das Arbeiten bei einer Luftfeuchtigkeit von bis zu 95% möglich.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2055003499/2012441964/Zebra ET60.png',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'maintenance', 'Field Service'],
+    deviceType: ['Forklift terminal/table']
   },
   {
     productName: 'Getac ZX70',
@@ -672,9 +716,10 @@ export const productListConfig: TProduct[] = [
       'Das Gerät widersteht laut Hersteller extremen Temperaturen und Wassereinfluss. Der Akku zählt zu den stärksten in der Geräteklasse. Eine Zertifizierung für den Einsatz in explosionsgefährdeten Umgebungen ist möglich.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2056126657/2012441964/getac_zx70@2x.png',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Explosion-proof', 'Field Service'],
+    deviceType: ['Forklift terminal/table']
   },
   {
     productName: 'Honeywell Dolphin CT40 HC',
@@ -687,9 +732,10 @@ export const productListConfig: TProduct[] = [
       'Smartes, leichtes und leistungsfähiges Gerät mit komfortabler Scan-Engine. Das CT40 HC ist konzipiert für den Einsatz in allen Bereichen des Gesundheitswesens. Gehäuse und Anschlüsse sind beständig gegen die regelmäßige Reinigung mit Desinfektionsmitteln.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2057675010/2012441964/honeywell_dolphin_ct40_hc@2x.jpg',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Healthcare'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Honeywell ScanPal EDA51K',
@@ -702,9 +748,10 @@ export const productListConfig: TProduct[] = [
       'Das Honeywell ScanPal EDA51K ist ein schickes und anwenderfreundliches Handheld-Terminal, das sich für Anwendungen in den Bereichen Lagerhaltung, Einzelhandel oder Lieferservice optimal eignet. Das ScanPal EDA51K ist sehr robust gebaut, ein ideales Arbeitsgerät für den täglichen Gebrauch.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2057808709/2012441964/Honeywell ScanPal EDA51K.png',
-    isFavorite: true,
-    isRentalAvailable: true,
-    operationArea: ['Field Service']
+    isFavorite: false,
+    isRentalAvailable: false,
+    operationArea: ['Field Service'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Honeywell ScanPal EDA57',
@@ -717,9 +764,10 @@ export const productListConfig: TProduct[] = [
       'Das Honeywell ScanPal EDA57 hat einen starken Prozessor und kann mit jeglichem Honeywell Zubehör aufgerüstet werden. Es ist schlank, aber dennoch robust und kann gut in schwierigen Umgebungsbedingungen benutzt werden. Das EDA57 empfehlen wir für den Einzelhandel, Produktionsumgebungen und die Bereiche Transport und Logistik.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2058590904/2012441964/HoneywellEDA57-_.png',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Beverage logistics'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Point Mobile PM451',
@@ -733,8 +781,9 @@ export const productListConfig: TProduct[] = [
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2061178735/2012441964/Point Mobile PM451.png',
     isFavorite: true,
-    isRentalAvailable: true,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'maintenance', 'Field Service'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Cipherlab RK95',
@@ -747,9 +796,10 @@ export const productListConfig: TProduct[] = [
       'Die RK95 Serie von Cipherlab tritt in Konkurrenz bietet performante Geräte für Anwender, die Wert auf eine physische Tastatur legen. Das RK95 kann mit einem bis zu 6.000 mAh starken Akku ausgestattet werden; ebenso sind unterschiedliche Tastaturlayouts erhältlich.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2065492285/2012441964/cipherlab_rk95@2x.jpg',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Bixolon XM7-40',
@@ -763,8 +813,9 @@ export const productListConfig: TProduct[] = [
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2066100301/2012441964/bixolon xm7-40.png',
     isFavorite: true,
-    isRentalAvailable: true,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Beverage logistics', 'maintenance', 'Field Service'],
+    deviceType: ['Printer']
   },
   {
     productName: 'i.Safe Mobile IS910.1',
@@ -777,9 +828,10 @@ export const productListConfig: TProduct[] = [
       'Das Tablet IS910.1 von i.Safe Mobile ist für den Einsatz unter jeglichen Bedingungen geschaffen. Das 8“ Tablet ist höchst robust, leistungsstark und bietet technische Vorteile, wie einen 8.400 mAh großen Akku und für die Chemieindustrie angepasste Hardware.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2067313977/2012441964/i.Safe IS910.1.png',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'maintenance', 'Explosion-proof', 'Field Service'],
+    deviceType: ['Forklift terminal/table']
   },
   {
     productName: 'Datalogic Memor 1',
@@ -791,9 +843,10 @@ export const productListConfig: TProduct[] = [
       'Mit dem Memor 1 bietet Datalogic ein Gerät mit Basisausstattung für einfache Scantätigkeiten in Handel, Lager und Produktion. Das Gerät ist in jeder Hinsicht weniger performant als das Memor 10.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2068409388/2012441964/datalogic_memor1@2x.jpg',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Beverage logistics'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Point Mobile PM90',
@@ -806,9 +859,10 @@ export const productListConfig: TProduct[] = [
       'Point Mobile preist das PM90 als ideales Gerät für den Außendienst an. Das Gerät ist sehr performant, gleichzeitig robust nach IP67 und wirkt dennoch smart wie ein Consumer Gerät. Durch zwei SAM Slots und den Magnetkartenleser wird die Funktionalität des Geräts noch effizient erweitert.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2069151743/2012441964/Point Mobile PM90.png',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Beverage logistics'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Zebra MC9400/9450',
@@ -821,9 +875,10 @@ export const productListConfig: TProduct[] = [
       'Das Zebra MC9400 bzw. MC9450 ist der Nachfolger des MC9300. Das Gerät ist wie sein Vorgänger sehr robust und durch die Mobilfunk-Variante (MC9450) noch optimaler im Außenlager einzusetzen. Durch die zahlreichen Tastaturoptionen ist es gut an den individuellen Einsatz anpassbar. Zusätzlich gibt es ein extra Modell für den Kühlbereich.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2069262532/2012441964/Zebra_MC9400u.450.png',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Beverage logistics'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Honeywell 8675i',
@@ -836,9 +891,10 @@ export const productListConfig: TProduct[] = [
       'Der 8675i ist einer der Top Modelle aus dem Honeywell Sortiment von den Wearable-Scannern. Er bietet ein starkes Preis-Leistungs-Verhältnis und die Option auf einen FlexRange-Imager. Der Scanner kann nicht nur per Ring, sondern auch problemlos mit einem Handschuh getragen werden.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2069644062/2012441964/Honeywell 8675i.png',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production'],
+    deviceType: ['Wearable/handheld scanner']
   },
   {
     productName: 'Zebra DS3678-SR',
@@ -852,8 +908,9 @@ export const productListConfig: TProduct[] = [
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2070060243/2012441964/Zebra DS3678-SR.png',
     isFavorite: true,
-    isRentalAvailable: true,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production'],
+    deviceType: ['Wearable/handheld scanner']
   },
   {
     productName: 'Advantech DLT-V72',
@@ -866,9 +923,10 @@ export const productListConfig: TProduct[] = [
       'Advantech ist der Spezialist für äußerst robuste Stapler-Terminals. Das DLT-V72 ist eines der wenigen Geräte in dieser Klasse mit einem (Industrial-)Android-Betriebssystem. Es ist mit 10 oder 12 Zoll Screen erhältlich und für raue Umgebungen mit vielen Stößen und Erschütterungen ausgelegt.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2070900504/2012441964/advantech_dlt-v72@2x.jpg',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production'],
+    deviceType: ['Forklift terminal/table']
   },
   {
     productName: 'Zebra ZQ220',
@@ -881,9 +939,10 @@ export const productListConfig: TProduct[] = [
       'Der ZQ220 Etikettendrucker von Zebra ist eine günstigere, aber dennoch leistungsstarke Variante der mobilen Drucker. Er ist relativ leicht und nicht so robust wie die ZQ500er Serie, druckt aber dennoch Labels und Etiketten in ähnlich hoher Geschwindigkeit. Mit seinem starken Preis-Leistungs-Verhältnis und der verstellbaren Druckbreite ist der Drucker eine gute Alternative.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2071322289/2012441964/Zebra ZQ220.png',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'maintenance', 'Field Service'],
+    deviceType: ['Printer']
   },
   {
     productName: 'Cipherlab RS51',
@@ -896,9 +955,10 @@ export const productListConfig: TProduct[] = [
       'Das Cipherlab bewegt sich in einer Klasse mit Geräten wie dem CT60 von Honeywell und TC52 von Zebra. Es ist ein robuster Allrounder mit Smartphone-Formfaktor, der sowohl für den Innen- und Außenbereich geeignet ist. Das Gerät unterstützt neben 1D- und 2D-Barcodes auch RFID und NFC.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2072297539/2012441964/cipherlab_rs51@2x.jpg',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Beverage logistics'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Point Mobile PM3',
@@ -911,9 +971,10 @@ export const productListConfig: TProduct[] = [
       'Der Point Mobile PM3 ist ein stilvoller, handlicher und intelligenter Bluetooth-Scanner. Es unterstützt Multi-Plattform, um eine Vielzahl von Benutzern und Anwendungen im Enterprise-Markt zu bedienen. Durch den IP54 Standard und das gut ablesbare OLED-Display ist der Scanner zudem gut für den Außenbereich geeignet.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2074536714/2012441964/Point Mobile PM3.png',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'maintenance'],
+    deviceType: ['Wearable/handheld scanner']
   },
   {
     productName: 'Keyence DX-A400',
@@ -927,8 +988,9 @@ export const productListConfig: TProduct[] = [
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2075335800/2012441964/Keyence DX-A400 new.png',
     isFavorite: true,
-    isRentalAvailable: true,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Beverage logistics'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Newland MT90 Orca III',
@@ -941,9 +1003,10 @@ export const productListConfig: TProduct[] = [
       'Newland ist ein niederländischer Anbieter von Industrie-Handhelds. Das MT90 III bietet ein interessantes Preis-Leistungs-Verhältnis und ist eine Alternative zu den etablierten Herstellern. Zahlreiches Zubehör und ein eigenes MDM-System komplettieren das Angebot von Newland.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2077544347/2012441964/Newland Orca MT90 III.png',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Beverage logistics'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Zebra MC2200',
@@ -956,9 +1019,10 @@ export const productListConfig: TProduct[] = [
       'Die jüngste Geräteklasse von Zebra ist ein vergleichsweise günstiges Gerät mit guten Leistungsmerkmalen - abhängig von der Modellvariante - und einer 34-Tasten-Hardware-Tastatur. Neu ist die „PRZM-Intelligent-Imaging“-Technologie, mit der auch beschädigte Barcodes gelesen werden können.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2077962878/2012441964/Zebra mc 2200.2.png',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production'],
+    deviceType: ['Printer']
   },
   {
     productName: 'Zebra HC20/50',
@@ -971,9 +1035,10 @@ export const productListConfig: TProduct[] = [
       'Mit dem HC20 und HC50 bietet Zebra ein neu überarbeitetes Modell für die Medizinbranche. Die beiden Versionen haben durch den speziellen Kunststoff ein desinfektionsmittelbeständiges Material, wobei das HC50 verbesserte Leistungsparameter, eine Hot-Swap-Funktion und Front Kamera gegenüber dem HC20 für einen Aufpreis bietet.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2079865932/2012441964/Zebra HC20_50.png',
-    isFavorite: true,
-    isRentalAvailable: true,
-    operationArea: ['Healthcare']
+    isFavorite: false,
+    isRentalAvailable: false,
+    operationArea: ['Healthcare'],
+    deviceType: ['Printer']
   },
   {
     productName: 'ACD M2Smart',
@@ -986,9 +1051,10 @@ export const productListConfig: TProduct[] = [
       'Das Handheld-Terminal M2Smart von ACD ist ein außergewöhnliches Gerät. Durch einen Schiebemechanismus an Ober- und Unterseite ist es möglich, unterschiedliche Module an dem Gerät anzubringen. Auf diese Weise lässt sich das Terminal spezifisch an verschiedene Anwendungsszenarien in Industrie und Handel anpassen.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2080709885/2012441964/ACD M2 smart.png',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'maintenance'],
+    deviceType: ['Printer']
   },
   {
     productName: 'Advantech AIM-65',
@@ -1001,9 +1067,10 @@ export const productListConfig: TProduct[] = [
       'Robustes und leichtes Tablet für stationäres und mobiles Arbeiten - auf einem Kommissionierwagen oder im Außendienstfahrzeug. Das Basis-Tablet kann um optionale Module wie 1D-/2D-Imager erweitert werden.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2080815179/2012441964/advantech_aim65@2x.png',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Field Service'],
+    deviceType: ['Forklift terminal/table']
   },
   {
     productName: 'Samsung XCover Pro',
@@ -1016,9 +1083,10 @@ export const productListConfig: TProduct[] = [
       'Das Samsung XCover Pro ist eine weiterentwickelte Variante des XCover 5 und bietet vor allem hochwertigere Komponenten. Punkten tut hier das große scharfe Display und die hochauflösende Kamera auf Vorder- und Rückseite, welche praktisch für detaillierte Fotoaufnahmen von Lieferungen ist. Das präferierte Einsatzgebiet bleibt hier die Getränkelogistik.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2081180166/2012441964/samsung xcover pro.png',
-    isFavorite: true,
-    isRentalAvailable: true,
-    operationArea: ['Beverage logistics']
+    isFavorite: false,
+    isRentalAvailable: false,
+    operationArea: ['Beverage logistics'],
+    deviceType: ['Smartphone']
   },
   {
     productName: 'iData T2',
@@ -1031,9 +1099,10 @@ export const productListConfig: TProduct[] = [
       'Der Handheld-Scanner iData T2 des chinesischen Herstellers ist für die Industrie und Logistik ein vielseitig einsetzbares Gerät. Er ist optional mit einem fest verbauten Pistolengriff und RFID- und NFC-Funktion erhältlich. Der Hersteller ist über den Händler Rugged IT neu am deutschen Markt.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2082619295/2012441964/iData T2.png',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Beverage logistics'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Keyence DX-A600',
@@ -1046,9 +1115,10 @@ export const productListConfig: TProduct[] = [
       'Der Hersteller Keyence hat mit der DX Serie Smartphone ähnliche Modelle mit zu ihrem Sortiment hinzugefügt, welche sich nun auch im Außendienst einsetzen lassen. Außerdem gibt es Zubehör, wie RFID-Reader, Keypads oder Pistolengriffe für jeweilige Szenarien. Softwareseitig ist es zudem möglich Codes trotz unterschiedlichster Beschädigungen zu scannen.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2082806452/2012441964/Keyence DX-A600.png',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Beverage logistics', 'maintenance'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'ProGlove MARK LEO',
@@ -1061,9 +1131,10 @@ export const productListConfig: TProduct[] = [
       'Der Wearable Scanner ProGlove Mark LEO ist zu seinen größeren Brüdern eine etwas abgespeckte Variante. Sein Gewicht ist dafür jedoch das geringste auf dem Markt und der Preis deutlich attraktiver.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2083456343/2012441964/ProGlove Mark LEO.png',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production'],
+    deviceType: ['Wearable/handheld scanner']
   },
   {
     productName: 'Zebra TC52ax',
@@ -1079,6 +1150,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: true,
     isRentalAvailable: true,
     operationArea: ['Warehouse & Production', 'Beverage logistics', 'Field Service'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Honeywell CW45',
@@ -1091,9 +1163,10 @@ export const productListConfig: TProduct[] = [
       'Der Wearable-Computer CW45 von Honeywell wurde speziell für den Freihandbetrieb im Lager oder der Fertigung entwickelt. Das Gerät kommt ohne integrierten Imager; die Kopplung mit einem Handrücken-Scanner ist möglich. Es besteht die Möglichkeit eine Tastatur anzubringen und die Akkuaufzeit mit dem Extended-Akku auf 12h zu bringen.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2084530641/2012441964/Honeywell CW45.png',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'maintenance'],
+    deviceType: ['handheld computer', 'Wearable/handheld scanner'],
   },
   {
     productName: 'Zebra TC73/78',
@@ -1106,9 +1179,10 @@ export const productListConfig: TProduct[] = [
       'Zebra legt im Bereich High-End Handhelds neue Modelle nach. Diese überzeugen mit großem Display und sehr performanter Hardware, wie der starken Scan-Engine und einem zukunftssicheren Prozessor. Trotz der hohen Robustheit, fällt das Design schlank aus und bietet zudem einen 4400mAh großen Akku.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2087429470/2012441964/Zebra TC73_78.png',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'maintenance'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Honeywell ScanPal EDA71',
@@ -1121,9 +1195,10 @@ export const productListConfig: TProduct[] = [
       'Das EDA71 ist ein flexibles Gerät für mobile Anwendungen, die einen größeren Bildschirm erfordern, z. B. im Außendienst oder in der Instandhaltung. Der robuste mobile Computer ist mit zahlreichem Zubehör verfügbar. Sein leistungsstarker Akku ermöglicht ein autarkes Arbeiten auch über eine reguläre Schicht hinaus.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2087505580/2012441964/Scanpal EDA71.png',
-    isFavorite: true,
-    isRentalAvailable: true,
-    operationArea: ['Beverage logistics', 'maintenance', 'Field Service']
+    isFavorite: false,
+    isRentalAvailable: false,
+    operationArea: ['Beverage logistics', 'maintenance', 'Field Service'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Advantech AIM78S ',
@@ -1136,9 +1211,10 @@ export const productListConfig: TProduct[] = [
       'Das neue Tablet von Advantech ist mit zahlreichen Erweiterungsmodulen und Docking-Möglichkeiten flexibel einsetzbar. Ein minus Punkt wäre hier die Akkulaufzeit von nur circa 6 Stunden.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2088384403/2012441964/Advantech Aim78s.png',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'maintenance', 'Field Service'],
+    deviceType: ['Forklift terminal/table']
   },
   {
     productName: 'Panasonic Toughbook N1',
@@ -1151,9 +1227,10 @@ export const productListConfig: TProduct[] = [
       'Ein leistungsstarkes Gerät mit einem ungewöhnlichen, laut Hersteller besonders ergonomischen, Scanner-Design bietet Panasonic mit dem Toughbook N1. Das Handheld ist sehr robust und kann mit zahlreichem Zubehör ergänzt werden. Auch gibt es eine "FLAT" Variante, welche durch den Kamera-Scanner für den Außendienst und Service Management geeignet ist.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2089030196/2012441964/panasonic_toughbook_fz-n1@2x.jpg',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Beverage logistics'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Zebra TC53/58',
@@ -1167,8 +1244,9 @@ export const productListConfig: TProduct[] = [
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2093602749/2012441964/Zebra TC58und53.png',
     isFavorite: true,
-    isRentalAvailable: true,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Beverage logistics'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'KoamTac KDC180H',
@@ -1181,9 +1259,10 @@ export const productListConfig: TProduct[] = [
       'Der kompakte Bluetooth-2D-Scanner ist als Wearable für Finger oder Handrücken konzipiert. Es gibt Varianten mit zusätzlichem UHF-RFID-Reader, alphanum. Tastatur oder Wireless charging.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2093665691/2012441964/KoamTac KDC180H.png',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production'],
+    deviceType: ['Wearable/handheld scanner']
   },
   {
     productName: 'Zebra ZQ511',
@@ -1197,8 +1276,9 @@ export const productListConfig: TProduct[] = [
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2093721521/2012441964/Zebra ZQ511.png',
     isFavorite: true,
-    isRentalAvailable: true,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Beverage logistics', 'maintenance', 'Field Service'],
+    deviceType: ['Printer']
   },
   {
     productName: 'Zebra TC22/TC27',
@@ -1211,9 +1291,10 @@ export const productListConfig: TProduct[] = [
       'Das Zebra TC22 bzw. 27 ersetzt die Vorgängermodelle TC21/26. Die neue Gerätegeneration kommt mit leistungsstärkerer Hardware. Das Display hat Zebra auf 6 Zoll vergrößert. Neu ist die Option von 2 Scan-Engines: Zur Wahl stehen das Standard-Scan-Modul SE4710 für die Nah- und Mitteldistanz und der SE55 mit einer Reichweite von bis zu 12 m für anspruchsvolles Scannen im Lager.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2093792001/2012441964/Zebra TC22.png',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Beverage logistics'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Zebra XSLATE L10',
@@ -1221,14 +1302,15 @@ export const productListConfig: TProduct[] = [
     display: 10,
     weight: 1300,
     availableAccesorry:
-      'verfügbares Zubehör: Optionale Anschlüsse für True-Serial, HDMI oder RFID, Stapler-Montage möglich',
+      'verfügbares Zubehör: Optionale Anschlüsse für false-Serial, HDMI oder RFID, Stapler-Montage möglich',
     ourAssessment:
       'Die Android-Version des XSLATE L10 ist ideal für den Field Service – Staub, Kälte und Nässe sind kein Problem. Laut Hersteller lassen sich die Tablets auch auf Fahrzeugen installieren – und sind eine Alternative zu klassischen Stapler-Terminals. Der optionale Griff mit integriertem Barcode-Reader ist leider nur in der Windows-Variante verfügbar.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2095159291/2012441964/zebra_xslate_l10@2x.png',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'maintenance', 'Field Service'],
+    deviceType: ['Forklift terminal/table']
   },
   {
     productName: 'Honeywell Dolphin CT47',
@@ -1242,8 +1324,9 @@ export const productListConfig: TProduct[] = [
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2096350358/2012441964/HoneywellCT47_-.png',
     isFavorite: true,
-    isRentalAvailable: true,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'maintenance', 'Field Service'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Zebra TC57x',
@@ -1259,6 +1342,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: true,
     isRentalAvailable: true,
     operationArea: ['Warehouse & Production', 'Field Service'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Newland MT95 Kambur Pro',
@@ -1271,9 +1355,10 @@ export const productListConfig: TProduct[] = [
       'Das Newland MT95 Kambur Pro ist eine günstigere Alternative zu dem Zebra TC58. Wer Wert auf ein großes Display und modernes Design legt, kriegt hiermit einen guten Allrounder mit starkem Preis-Leistungs-Verhältnis.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2097490841/2012441964/Newland MT95.png',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'maintenance'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'CAT S42',
@@ -1287,8 +1372,9 @@ export const productListConfig: TProduct[] = [
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2097708217/2012441964/CAT S42.png',
     isFavorite: true,
-    isRentalAvailable: true,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Beverage logistics'],
+    deviceType: ['Smartphone']
   },
   {
     productName: 'Samsung Tab A SM-T595',
@@ -1301,9 +1387,10 @@ export const productListConfig: TProduct[] = [
       'Das Galaxy Tab A SM-T595 von Samsung ist ein klassisches Consumer Tablet, was sich im vergleichsweise günstigen Preis widerspiegelt. Das Gerät ist für einfache Anwendungsszenarien denkbar, die keine besonderen Ansprüche an Robustheit und Hardware-Ausstattung stellen.',
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2097784761/2012441964/Samsung Tab A SM-T595N.png',
-    isFavorite: true,
-    isRentalAvailable: true,
+    isFavorite: false,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'maintenance', 'Field Service'],
+    deviceType: ['Forklift terminal/table']
   },
   {
     productName: 'Point Mobile PM67',
@@ -1317,8 +1404,9 @@ export const productListConfig: TProduct[] = [
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2098788192/2012441964/Point Mobile PM67.png',
     isFavorite: true,
-    isRentalAvailable: true,
+    isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Field Service'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Samsung Tab Active 4 Pro',
@@ -1332,8 +1420,9 @@ export const productListConfig: TProduct[] = [
     imageUrl:
       'https://skystatic08.atmos.id/11018/2049634327/2099471937/2012441964/Samsung tab active 4 pro.png',
     isFavorite: true,
-    isRentalAvailable: true,
-    operationArea: ['maintenance', 'Field Service']
+    isRentalAvailable: false,
+    operationArea: ['maintenance', 'Field Service'],
+    deviceType: ['Forklift terminal/table']
   },
 ];
 
