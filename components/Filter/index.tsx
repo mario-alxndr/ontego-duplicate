@@ -68,7 +68,8 @@ export const Filter = (props: TFilter) => {
             const isActive = selection.includes(name);
 
             return (
-              <ChipSelect 
+              <ChipSelect
+                key={`selection-${name}`}
                 isActive={isActive}
                 label={label} 
                 name={name}
@@ -97,6 +98,7 @@ export const Filter = (props: TFilter) => {
 
             return (
               <ChipSelect 
+                key={`device-${name}`}
                 isActive={isActive}
                 label={label} 
                 name={name}
@@ -126,6 +128,7 @@ export const Filter = (props: TFilter) => {
 
               return (
                 <ChipSelect 
+                  key={`manufactur-${name}`}
                   isActive={isActive}
                   label={label} 
                   name={name}
@@ -154,6 +157,7 @@ export const Filter = (props: TFilter) => {
 
               return (
                 <ChipSelect 
+                  key={`operation-area-${name}`}
                   isActive={isActive}
                   label={label} 
                   name={name}
