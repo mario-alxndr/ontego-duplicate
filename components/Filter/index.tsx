@@ -7,7 +7,7 @@ import { createRoot } from 'react-dom/client'
 import { useRanger, Ranger } from '@tanstack/react-ranger'
 
 // Component
-import { ChipSelect } from '../ChipSelect';
+import { Chip } from '../ChipSelect';
 
 // Lib
 import { DEVICE_TYPE_OPTION, MANUFACTURER_OPTION, OPERATION_AREA_OPTION, SELECTION_OPTION } from '@/lib/constant/options';
@@ -24,6 +24,7 @@ type TFilter = {
   onChangeDeviceType: (newValue: string[]) => void,
   onChangeManufactuer: (newValue: string[]) => void,
   onChangeOperationArea: (newValue: string[]) => void,
+  onClickResetFilter: () => void,
 };
 
 export const Filter = (props: TFilter) => {
@@ -36,6 +37,7 @@ export const Filter = (props: TFilter) => {
     onChangeDeviceType,
     onChangeManufactuer,
     onChangeOperationArea,
+    onClickResetFilter,
   } = props;
   const [isOpen, setIsOpen] = React.useState(false);
 
@@ -67,16 +69,16 @@ export const Filter = (props: TFilter) => {
               }
             };
 
-            const isActive = selection.includes(name);
+            const type = selection.includes(name) ? 'active_filter' : 'inactive_filter';
 
             return (
-              <ChipSelect
+              <Chip
                 key={`selection-${name}`}
-                isActive={isActive}
-                label={label} 
-                name={name}
                 onClick={handleClickSelection}
-              />
+                type={type}
+              >
+                {label}
+              </Chip>
             )
           })}
         </div>
@@ -96,16 +98,16 @@ export const Filter = (props: TFilter) => {
               }
             };
 
-            const isActive = selectedDeviceType.includes(name);
+            const type = selectedDeviceType.includes(name) ? 'active_filter' : 'inactive_filter';
 
             return (
-              <ChipSelect 
+              <Chip 
                 key={`device-${name}`}
-                isActive={isActive}
-                label={label} 
-                name={name}
                 onClick={handleClickSelection}
-              />
+                type={type}
+              >
+                {label}
+              </Chip>
             )
           })}
         </div>
@@ -126,16 +128,16 @@ export const Filter = (props: TFilter) => {
                 }
               };
 
-              const isActive = selectedManufacturer.includes(name);
+              const type = selectedManufacturer.includes(name) ? 'active_filter' : 'inactive_filter';
 
               return (
-                <ChipSelect 
+                <Chip 
                   key={`manufactur-${name}`}
-                  isActive={isActive}
-                  label={label} 
-                  name={name}
                   onClick={handleClickSelection}
-                />
+                  type={type}
+                >
+                  {label}
+                </Chip>
               )
             })}
           </div>
@@ -155,16 +157,16 @@ export const Filter = (props: TFilter) => {
                 }
               };
 
-              const isActive = selectedOperationArea.includes(name);
+              const type = selectedOperationArea.includes(name) ? 'active_filter' : 'inactive_filter';
 
               return (
-                <ChipSelect 
+                <Chip 
                   key={`operation-area-${name}`}
-                  isActive={isActive}
-                  label={label} 
-                  name={name}
+                  type={type}
                   onClick={handleClickSelection}
-                />
+                >
+                  {label}
+                </Chip>
               )
             })}
           </div>
@@ -176,7 +178,7 @@ export const Filter = (props: TFilter) => {
       <div className={styles.filter_bottom}>
         <p className={styles.filter_caption}>All information/prices without guarantee</p>
         <div>
-          <p className={styles.reset_button}>reset filter</p>
+          <p className={styles.reset_button} onClick={onClickResetFilter}>reset filter</p>
           <p className={styles.toggle_button} onClick={handleClickToggleFilter}>
             {isOpen ? 'Hide filters' : 'Show more filters'}
           </p>

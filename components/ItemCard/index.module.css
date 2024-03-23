@@ -1,0 +1,72 @@
+.card_container {
+  width: 212.5px;
+  height: 285px;
+  color: #383d47;
+  font-family: Roboto;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  line-height: 20px !important;
+  margin-bottom: 0px;
+  position: relative;
+}
+
+.image_container {
+  width: 212.5px;
+  height: 255px;
+  position: relative;
+}
+
+.card_image {
+  background-size: cover;
+  padding-top: 120%;
+  background-position: center;
+}
+
+.card_text {
+  margin-top: 10px;
+  width: 212.5px;
+  height: 20px;
+  text-align: center;
+}
+
+.card_overlay {
+  content: '';
+  position: absolute;
+  background: #2d333d;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.2;
+  -webkit-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.card_overlay_off {
+  content: '';
+  position: absolute;
+  background: #2d333d;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.chip_container {
+  position: absolute;
+  top: -15px;
+  right: -10px;
+  z-index: 2;
+  display: flex;
+  gap: 5px;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    left:0;
+    right:unset;
+  }
+}

@@ -33,10 +33,6 @@ export const NavBar = () => {
     setActiveSubMenu(event.currentTarget.textContent || '');
   };
 
-  React.useEffect(() => {
-    console.log(activeMenu, activeSubMenu);
-  }, [activeMenu, activeSubMenu]);
-
   return (
     <nav className={styles.nav_bar}>
       <div className={styles.top_nav_bar_container}>
@@ -89,14 +85,20 @@ export const NavBar = () => {
         onMouseLeave={() => setActiveMenu('')}
       >
         <div className={styles.bot_nav_bar}>
-          <div className={activeMenu ? styles.bot_logo_active :  styles.bot_logo}>
-            <Image
-              src="https://ontego.de/images/commsult/logos/Ontego_subline.svg"
-              alt="logo"
-              width={104}
-              height={55}
-            />
-          </div>
+          {activeMenu === 'Products' || activeMenu === '' ? (
+            <div
+              className={activeMenu ? styles.bot_logo_active : styles.bot_logo}
+            >
+              <Image
+                src="https://ontego.de/images/commsult/logos/Ontego_subline.svg"
+                alt="logo"
+                width={104}
+                height={55}
+              />
+            </div>
+          ) : (
+            <div className={styles.void_logo} />
+          )}
           <div className={styles.nav_submenu_container}>
             {navMenu.map((item, index) => {
               if (
@@ -109,7 +111,11 @@ export const NavBar = () => {
                       {item.submenu.map((subitem, subindex) => (
                         <div
                           key={subindex + subitem.subMenu}
-                          className={activeMenu ? styles.vertical_submenu : styles.submenu}
+                          className={
+                            activeMenu
+                              ? styles.vertical_submenu
+                              : styles.submenu
+                          }
                         >
                           <NavSubmenu
                             key={subindex + subitem.subMenu}

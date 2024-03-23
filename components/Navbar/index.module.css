@@ -122,6 +122,12 @@
   padding: 0px 15px 0 75px;
 }
 
+.void_logo {
+  padding: 0px 15px 0 75px;
+  width: 194px;
+  height: 55px;
+}
+
 .bot_logo_active {
   padding: 0px 15px 0 75px;
   place-self: start;

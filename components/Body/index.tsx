@@ -39,6 +39,13 @@ export const Body = () => {
     setSelectedOperationArea(newValue)
   };
 
+  const handleResetFilter = () => {
+    setSelection([]);
+    setSelectedDeviceType([]);
+    setSelectedManufacturer([]);
+    setSelectedOperationArea([]);
+  }
+
   return (
     <div className={styles.body_container}>
       <Filter
@@ -50,6 +57,7 @@ export const Body = () => {
         onChangeDeviceType={handleChangeDeviceType}
         onChangeManufactuer={handleChangeManufactuer}
         onChangeOperationArea={handleChangeOperationArea}
+        onClickResetFilter={handleResetFilter}
       />
       <ListItem />
     </div>

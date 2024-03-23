@@ -1,5 +1,3 @@
-'use client'
-
 // Node Modules
 import * as React from 'react';
 
@@ -9,13 +7,11 @@ import styles from './index.module.css';
 export interface ChipProps {
   children: React.ReactNode;
   type?: 'active_filter' | 'inactive_filter' | 'rental_chip';
-  onClick?: () => void;
 }
 
 export const Chip: React.FC<ChipProps> = ({
   children,
   type = 'inactive_filter',
-  onClick
 }) => {
   const getChipStyle = () => {
     switch (type) {
@@ -30,5 +26,5 @@ export const Chip: React.FC<ChipProps> = ({
     }
   };
 
-  return <div className={getChipStyle()} onClick={onClick}>{children}</div>;
+  return <div className={getChipStyle()}>{children}</div>;
 };
