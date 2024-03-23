@@ -15,6 +15,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: true,
     isRentalAvailable: true,
     operationArea: ['Warehouse & Production'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Casio DT-X450',
@@ -30,6 +31,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Zebra MC3300X',
@@ -45,6 +47,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: true,
     isRentalAvailable: true,
     operationArea: ['Warehouse & Production', 'Field Service'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'CAT S53',
@@ -60,6 +63,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Beverage logistics'],
+    deviceType: ['Smartphone'],
   },
   {
     productName: 'Zebra ET40/45',
@@ -75,6 +79,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: true,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'maintenance', 'Field Service'],
+    deviceType: ['Forklift terminal/table'],
   },
   {
     productName: 'Datalogic Memor 11',
@@ -90,6 +95,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Field Service'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Bixolon SPP-R310',
@@ -105,6 +111,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Beverage logistics', 'maintenance', 'Field Service'],
+    deviceType: ['Printer']
   },
   {
     productName: 'Point Mobile PM5',
@@ -120,6 +127,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production'],
+    deviceType: ['Wearable/handheld scanner']
   },
   {
     productName: 'Zebra MC2700',
@@ -135,6 +143,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Beverage logistics'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Zebra RS6100',
@@ -150,6 +159,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production'],
+    deviceType: ['Wearable/handheld scanner']
   },
   {
     productName: 'Point Mobile PM75',
@@ -165,6 +175,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Beverage logistics'],
+    deviceType: ['Smartphone']
   },
   {
     productName: 'Cipherlab RS36',
@@ -180,6 +191,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'maintenance'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Zebra WS50',
@@ -195,6 +207,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: true,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'maintenance'],
+    deviceType: ['Wearable/handheld scanner']
   },
   {
     productName: 'ACD HasciSE',
@@ -210,6 +223,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production'],
+    deviceType: ['Wearable/handheld scanner']
   },
   {
     productName: 'Casio ET-L10',
@@ -225,6 +239,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: true,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Beverage logistics', 'Field Service'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Honeywell ScanPal EDA10A',
@@ -240,6 +255,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: true,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'maintenance', 'Field Service'],
+    deviceType: ['Forklift terminal/table']
   },
   {
     productName: 'Point Mobile PM30',
@@ -255,6 +271,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Beverage logistics', 'Field Service'],
+    deviceType: ['Smartphone']
   },
   {
     productName: 'Samsung Xcover 5',
@@ -270,6 +287,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: true,
     isRentalAvailable: false,
     operationArea: ['Beverage logistics'],
+    deviceType: ['Smartphone']
   },
   {
     productName: 'i.Safe Mobile IS530.1 ',
@@ -285,6 +303,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Explosion-proof'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Honeywell ScanPal EDA61K',
@@ -300,6 +319,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Beverage logistics'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Samsung Tab Active 3',
@@ -314,7 +334,8 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2022407552/2012441964/Samsung Tab Active 3.png',
     isFavorite: true,
     isRentalAvailable: false,
-    operationArea: ['maintenance', 'Field Service']
+    operationArea: ['maintenance', 'Field Service'],
+    deviceType: ['Forklift terminal/table']
   },
   {
     productName: 'ProGlove MARK 3',
@@ -330,6 +351,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production'],
+    deviceType: ['Wearable/handheld scanner']
   },
   {
     productName: 'Datalogic Memor 20',
@@ -345,6 +367,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Field Service'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Datalogic Memor 10 Healthcare',
@@ -359,7 +382,8 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2028350172/2012441964/datalogic_memor10_healthcare@2x.jpg',
     isFavorite: false,
     isRentalAvailable: false,
-    operationArea: ['Healthcare']
+    operationArea: ['Healthcare'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Casio IT-G600 / IT-G650',
@@ -375,6 +399,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Point Mobile PM560',
@@ -390,6 +415,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Field Service'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Gigaset GX290 Plus',
@@ -405,6 +431,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Beverage logistics'],
+    deviceType: ['Smartphone']
   },
   {
     productName: 'Honeywell Dolphin CK65',
@@ -420,6 +447,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: true,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Explosion-proof'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'CAT S75',
@@ -435,6 +463,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Beverage logistics', 'Healthcare'],
+    deviceType: ['Smartphone']
   },
   {
     productName: 'Honeywell ScanPal EDA52 HC',
@@ -449,7 +478,8 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2036806814/2012441964/Honeywell EDA52HC.png',
     isFavorite: false,
     isRentalAvailable: false,
-    operationArea: ['Healthcare']
+    operationArea: ['Healthcare'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'ProGlove MARK Display',
@@ -465,6 +495,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production'],
+    deviceType: ['Wearable/handheld scanner']
   },
   {
     productName: 'Datalogic Memor K',
@@ -480,6 +511,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Beverage logistics'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Panasonic Toughbook S1',
@@ -495,6 +527,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'maintenance', 'Field Service'],
+    deviceType: ['Forklift terminal/table']
   },
   {
     productName: 'Honeywell Dolphin CT60 XP',
@@ -510,6 +543,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: true,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Field Service'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Keyence BT-A700',
@@ -525,6 +559,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: true,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Feig HyWEAR compact xT',
@@ -540,6 +575,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production'],
+    deviceType: ['Wearable/handheld scanner']
   },
   {
     productName: 'Panasonic Toughbook A3',
@@ -555,6 +591,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['maintenance', 'Field Service'],
+    deviceType: ['Forklift terminal/table']
   },
   {
     productName: 'Zebra TC8300',
@@ -570,6 +607,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Zebra MC9300',
@@ -585,6 +623,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'i.Safe Mobile IS655.2',
@@ -600,6 +639,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Beverage logistics', 'Explosion-proof'],
+    deviceType: ['Smartphone']
   },
   {
     productName: 'Zebra ZQ521',
@@ -615,6 +655,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Beverage logistics', 'maintenance', 'Field Service'],
+    deviceType: ['Printer']
   },
   {
     productName: 'Point Mobile PM351',
@@ -630,6 +671,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Point Mobile PM86',
@@ -645,6 +687,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Beverage logistics'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Zebra ET60/ET65 Tablet',
@@ -660,6 +703,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'maintenance', 'Field Service'],
+    deviceType: ['Forklift terminal/table']
   },
   {
     productName: 'Getac ZX70',
@@ -675,6 +719,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Explosion-proof', 'Field Service'],
+    deviceType: ['Forklift terminal/table']
   },
   {
     productName: 'Honeywell Dolphin CT40 HC',
@@ -690,6 +735,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Healthcare'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Honeywell ScanPal EDA51K',
@@ -704,7 +750,8 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2057808709/2012441964/Honeywell ScanPal EDA51K.png',
     isFavorite: false,
     isRentalAvailable: false,
-    operationArea: ['Field Service']
+    operationArea: ['Field Service'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Honeywell ScanPal EDA57',
@@ -720,6 +767,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Beverage logistics'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Point Mobile PM451',
@@ -735,6 +783,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: true,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'maintenance', 'Field Service'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Cipherlab RK95',
@@ -750,6 +799,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Bixolon XM7-40',
@@ -765,6 +815,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: true,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Beverage logistics', 'maintenance', 'Field Service'],
+    deviceType: ['Printer']
   },
   {
     productName: 'i.Safe Mobile IS910.1',
@@ -780,6 +831,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'maintenance', 'Explosion-proof', 'Field Service'],
+    deviceType: ['Forklift terminal/table']
   },
   {
     productName: 'Datalogic Memor 1',
@@ -794,6 +846,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Beverage logistics'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Point Mobile PM90',
@@ -809,6 +862,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Beverage logistics'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Zebra MC9400/9450',
@@ -824,6 +878,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Beverage logistics'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Honeywell 8675i',
@@ -839,6 +894,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production'],
+    deviceType: ['Wearable/handheld scanner']
   },
   {
     productName: 'Zebra DS3678-SR',
@@ -854,6 +910,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: true,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production'],
+    deviceType: ['Wearable/handheld scanner']
   },
   {
     productName: 'Advantech DLT-V72',
@@ -869,6 +926,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production'],
+    deviceType: ['Forklift terminal/table']
   },
   {
     productName: 'Zebra ZQ220',
@@ -884,6 +942,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'maintenance', 'Field Service'],
+    deviceType: ['Printer']
   },
   {
     productName: 'Cipherlab RS51',
@@ -899,6 +958,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Beverage logistics'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Point Mobile PM3',
@@ -914,6 +974,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'maintenance'],
+    deviceType: ['Wearable/handheld scanner']
   },
   {
     productName: 'Keyence DX-A400',
@@ -929,6 +990,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: true,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Beverage logistics'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Newland MT90 Orca III',
@@ -944,6 +1006,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Beverage logistics'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Zebra MC2200',
@@ -959,6 +1022,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production'],
+    deviceType: ['Printer']
   },
   {
     productName: 'Zebra HC20/50',
@@ -973,7 +1037,8 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2079865932/2012441964/Zebra HC20_50.png',
     isFavorite: false,
     isRentalAvailable: false,
-    operationArea: ['Healthcare']
+    operationArea: ['Healthcare'],
+    deviceType: ['Printer']
   },
   {
     productName: 'ACD M2Smart',
@@ -989,6 +1054,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'maintenance'],
+    deviceType: ['Printer']
   },
   {
     productName: 'Advantech AIM-65',
@@ -1004,6 +1070,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Field Service'],
+    deviceType: ['Forklift terminal/table']
   },
   {
     productName: 'Samsung XCover Pro',
@@ -1018,7 +1085,8 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2081180166/2012441964/samsung xcover pro.png',
     isFavorite: false,
     isRentalAvailable: false,
-    operationArea: ['Beverage logistics']
+    operationArea: ['Beverage logistics'],
+    deviceType: ['Smartphone']
   },
   {
     productName: 'iData T2',
@@ -1034,6 +1102,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Beverage logistics'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Keyence DX-A600',
@@ -1049,6 +1118,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Beverage logistics', 'maintenance'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'ProGlove MARK LEO',
@@ -1064,6 +1134,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production'],
+    deviceType: ['Wearable/handheld scanner']
   },
   {
     productName: 'Zebra TC52ax',
@@ -1079,6 +1150,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: true,
     isRentalAvailable: true,
     operationArea: ['Warehouse & Production', 'Beverage logistics', 'Field Service'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Honeywell CW45',
@@ -1094,6 +1166,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'maintenance'],
+    deviceType: ['handheld computer', 'Wearable/handheld scanner'],
   },
   {
     productName: 'Zebra TC73/78',
@@ -1109,6 +1182,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'maintenance'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Honeywell ScanPal EDA71',
@@ -1123,7 +1197,8 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2087505580/2012441964/Scanpal EDA71.png',
     isFavorite: false,
     isRentalAvailable: false,
-    operationArea: ['Beverage logistics', 'maintenance', 'Field Service']
+    operationArea: ['Beverage logistics', 'maintenance', 'Field Service'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Advantech AIM78S ',
@@ -1139,6 +1214,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'maintenance', 'Field Service'],
+    deviceType: ['Forklift terminal/table']
   },
   {
     productName: 'Panasonic Toughbook N1',
@@ -1154,6 +1230,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Beverage logistics'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Zebra TC53/58',
@@ -1169,6 +1246,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: true,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Beverage logistics'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'KoamTac KDC180H',
@@ -1184,6 +1262,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production'],
+    deviceType: ['Wearable/handheld scanner']
   },
   {
     productName: 'Zebra ZQ511',
@@ -1199,6 +1278,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: true,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Beverage logistics', 'maintenance', 'Field Service'],
+    deviceType: ['Printer']
   },
   {
     productName: 'Zebra TC22/TC27',
@@ -1214,6 +1294,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Beverage logistics'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Zebra XSLATE L10',
@@ -1229,6 +1310,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'maintenance', 'Field Service'],
+    deviceType: ['Forklift terminal/table']
   },
   {
     productName: 'Honeywell Dolphin CT47',
@@ -1244,6 +1326,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: true,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'maintenance', 'Field Service'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Zebra TC57x',
@@ -1259,6 +1342,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: true,
     isRentalAvailable: true,
     operationArea: ['Warehouse & Production', 'Field Service'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Newland MT95 Kambur Pro',
@@ -1274,6 +1358,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'maintenance'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'CAT S42',
@@ -1289,6 +1374,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: true,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Beverage logistics'],
+    deviceType: ['Smartphone']
   },
   {
     productName: 'Samsung Tab A SM-T595',
@@ -1304,6 +1390,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: false,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'maintenance', 'Field Service'],
+    deviceType: ['Forklift terminal/table']
   },
   {
     productName: 'Point Mobile PM67',
@@ -1319,6 +1406,7 @@ export const productListConfig: TProduct[] = [
     isFavorite: true,
     isRentalAvailable: false,
     operationArea: ['Warehouse & Production', 'Field Service'],
+    deviceType: ['handheld computer'],
   },
   {
     productName: 'Samsung Tab Active 4 Pro',
@@ -1333,7 +1421,8 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2099471937/2012441964/Samsung tab active 4 pro.png',
     isFavorite: true,
     isRentalAvailable: false,
-    operationArea: ['maintenance', 'Field Service']
+    operationArea: ['maintenance', 'Field Service'],
+    deviceType: ['Forklift terminal/table']
   },
 ];
 

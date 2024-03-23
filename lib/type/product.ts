@@ -9,4 +9,5 @@ export type TProduct = {
   isFavorite: boolean;
   isRentalAvailable: boolean;
   operationArea: string[];
+  deviceType: string[];
 };

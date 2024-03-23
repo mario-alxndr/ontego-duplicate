@@ -69,7 +69,9 @@ export const Body = () => {
       else if(selection[0] === 'rental' && !productRecord.isRentalAvailable) isMatchSelection = false;
 
       // Device
-      const isMatchDevice = true;
+      const isMatchDevice = selectedDeviceType.length > 0 ? 
+        selectedDeviceType.includes(productRecord.deviceType[0])
+        : true;
 
       // // Manufacturer Option
       const isMatchManufacturer = selectedManufacturer.length > 0 ? 
