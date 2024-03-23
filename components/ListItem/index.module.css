@@ -4,6 +4,20 @@
 }
 
 .list_item_content {
-  display: flex;
-  justify-content: center;
+  max-width: 970px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  row-gap: 48px;
+}
+
+@media (max-width: 420px) {
+  .list_item_content {
+    grid-template-columns: auto auto;
+  }
+}
+@media (max-width: 720px) {
+  .list_item_content {
+    grid-template-columns: auto auto auto;
+  }
 }

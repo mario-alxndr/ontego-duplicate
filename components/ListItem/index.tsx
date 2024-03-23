@@ -1,6 +1,9 @@
 // Node Modules
 import * as React from 'react';
 
+// Components
+import { ItemCard } from '../ItemCard';
+
 // Types
 import { TProduct } from '@/lib/type/product';
 
@@ -17,7 +20,11 @@ export const ListItem = (props: TListItem) => {
   return (
     <div className={styles.list_item_container}>
       <div className={styles.list_item_content}>
-        this is list item
+        {filterredScrappedData.map((filterredData, index) => {
+          return (
+            <ItemCard item={filterredData}/>
+          )
+        })}
       </div>
     </div>
   )

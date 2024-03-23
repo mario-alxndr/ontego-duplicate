@@ -57,3 +57,27 @@
 .title_popup span {
   border-bottom: 4px solid #0077b6;
 }
+
+@media (max-width: 760px) {
+  .top_figure {
+    display: block;
+  }
+
+  .title_popup {
+    margin: 0 auto;
+  }
+
+  .image_wrapper {
+    width: 100%;
+  }
+
+  .image_content {
+    margin: 0 auto;
+    position: relative;
+    left: 0px;
+  }
+
+  .image_content::before {
+    opacity: 0;
+  }
+}

@@ -110,8 +110,6 @@ export const Body = () => {
     JSON.stringify(selectedOperationArea),
   ]);
 
-  console.log('filterredScrappedData', filterredScrappedData);
-
   return (
     <div className={styles.body_container}>
       <Filter
