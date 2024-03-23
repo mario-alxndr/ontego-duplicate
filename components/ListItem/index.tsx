@@ -22,7 +22,7 @@ export const ListItem = (props: TListItem) => {
       <div className={styles.list_item_content}>
         {filterredScrappedData.map((filterredData, index) => {
           return (
-            <ItemCard item={filterredData}/>
+            <ItemCard key={`${filterredData}-${index}`} item={filterredData}/>
           )
         })}
       </div>
