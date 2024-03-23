@@ -16,7 +16,7 @@ export const Body = () => {
   const [selectedDeviceType, setSelectedDeviceType] = React.useState<string[]>([]);
   const [selectedManufacturer, setSelectedManufacturer] = React.useState<string[]>([]);
   const [selectedOperationArea, setSelectedOperationArea] = React.useState<string[]>([]);
-  const [price, setValues] = React.useState<ReadonlyArray<number>>([
+  const [price, setPrice] = React.useState<ReadonlyArray<number>>([
     0, 3500,
   ])
   const [weight, setWeight] = React.useState<ReadonlyArray<number>>([
@@ -46,6 +46,14 @@ export const Body = () => {
     setSelectedOperationArea([]);
   }
 
+  const handleChangePrice = (newValue: ReadonlyArray<number>) => {
+    setPrice(newValue)
+  }
+
+  const handleChangeWeight = (newValue: ReadonlyArray<number>) => {
+    setWeight(newValue)
+  }
+
   return (
     <div className={styles.body_container}>
       <Filter
@@ -58,6 +66,10 @@ export const Body = () => {
         onChangeManufactuer={handleChangeManufactuer}
         onChangeOperationArea={handleChangeOperationArea}
         onClickResetFilter={handleResetFilter}
+        price={price}
+        onChangePrice={handleChangePrice}
+        weight={weight}
+        onChangeWeight={handleChangeWeight}
       />
       <ListItem />
     </div>

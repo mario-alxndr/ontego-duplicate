@@ -3,11 +3,10 @@
 // Node Modules
 import * as React from 'react';
 import cn from 'classnames';
-import { createRoot } from 'react-dom/client'
-import { useRanger, Ranger } from '@tanstack/react-ranger'
 
 // Component
 import { Chip } from '../Chip';
+import { InputRange } from '../InputRange';
 
 // Lib
 import { DEVICE_TYPE_OPTION, MANUFACTURER_OPTION, OPERATION_AREA_OPTION, SELECTION_OPTION } from '@/lib/constant/options';
@@ -16,6 +15,7 @@ import { DEVICE_TYPE_OPTION, MANUFACTURER_OPTION, OPERATION_AREA_OPTION, SELECTI
 import styles from './index.module.css';
 
 type TFilter = {
+  price: ReadonlyArray<number>,
   selection: string[],
   selectedDeviceType: string[],
   selectedManufacturer: string[],
@@ -24,11 +24,15 @@ type TFilter = {
   onChangeDeviceType: (newValue: string[]) => void,
   onChangeManufactuer: (newValue: string[]) => void,
   onChangeOperationArea: (newValue: string[]) => void,
+  onChangePrice: (newValue: ReadonlyArray<number>) => void;
+  onChangeWeight: (newValue: ReadonlyArray<number>) => void;
   onClickResetFilter: () => void,
+  weight: ReadonlyArray<number>,
 };
 
 export const Filter = (props: TFilter) => {
   const {
+    price,
     selection,
     selectedDeviceType,
     selectedManufacturer,
@@ -37,7 +41,10 @@ export const Filter = (props: TFilter) => {
     onChangeDeviceType,
     onChangeManufactuer,
     onChangeOperationArea,
+    onChangePrice,
+    onChangeWeight,
     onClickResetFilter,
+    weight,
   } = props;
   const [isOpen, setIsOpen] = React.useState(false);
 
@@ -171,9 +178,16 @@ export const Filter = (props: TFilter) => {
             })}
           </div>
         </div>
-      </div>
-      <div className={styles.filter_range_container}>
-        
+        <div className={styles.filter_range_container}>
+          <InputRange 
+            values={price}
+            onChangeValue={onChangePrice}
+          />
+          <InputRange 
+            values={weight}
+            onChangeValue={onChangeWeight}
+          />
+        </div>
       </div>
       <div className={styles.filter_bottom}>
         <p className={styles.filter_caption}>All information/prices without guarantee</p>
