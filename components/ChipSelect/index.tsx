@@ -7,20 +7,21 @@ import styles from './index.module.css';
 
 type TChipSelectProps = {
   isActive?: boolean;
+  key: string
   label: string;
   name: string;
   onClick?: () => void;
 };
 
 export const ChipSelect = (props: TChipSelectProps) => {
-  const { isActive = false, label, name, onClick } = props;
+  const { isActive = false, key, label, onClick } = props;
   
   const chipSelectClassname = cn(styles.chip_container, {
     [styles.active]: isActive,
   });
 
   return (
-    <div className={chipSelectClassname} onClick={onClick}>
+    <div key={key} className={chipSelectClassname} onClick={onClick}>
       {label}
     </div>
   )
