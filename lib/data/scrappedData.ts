@@ -1,4 +1,4 @@
-import { TProduct } from '../type/product';
+import { TProduct } from '@/lib/type/product';
 
 export const productListConfig: TProduct[] = [
   {
@@ -14,6 +14,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2002200717/2012441964/zebra_tc21@2x.jpg',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production'],
   },
   {
     productName: 'Casio DT-X450',
@@ -28,6 +29,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2003011650/2012441964/casio_dt-x400@2x.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production'],
   },
   {
     productName: 'Zebra MC3300X',
@@ -42,6 +44,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2003088216/2012441964/zebra_mc3300@2x.jpeg',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production', 'Field Service'],
   },
   {
     productName: 'CAT S53',
@@ -56,6 +59,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2003436729/2012441964/CAT S53.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Beverage logistics'],
   },
   {
     productName: 'Zebra ET40/45',
@@ -70,6 +74,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2004413200/2012441964/Zebra ET45_ET40.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production', 'maintenance', 'Field Service'],
   },
   {
     productName: 'Datalogic Memor 11',
@@ -84,6 +89,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2004895232/2012441964/datalogic_memor10@2x.jpg',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production', 'Field Service'],
   },
   {
     productName: 'Bixolon SPP-R310',
@@ -98,6 +104,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2011864198/2012441964/Bixolon SPP R310.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production', 'Beverage logistics', 'maintenance', 'Field Service'],
   },
   {
     productName: 'Point Mobile PM5',
@@ -112,6 +119,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2012518994/2012441964/Point Mobile PM5.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production'],
   },
   {
     productName: 'Zebra MC2700',
@@ -126,6 +134,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2012669047/2012441964/ZebraMC2700.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production', 'Beverage logistics'],
   },
   {
     productName: 'Zebra RS6100',
@@ -140,6 +149,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2015395946/2012441964/Zebra RS6100.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production'],
   },
   {
     productName: 'Point Mobile PM75',
@@ -154,6 +164,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2015462482/2012441964/PointMobilePM75.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production', 'Beverage logistics'],
   },
   {
     productName: 'Cipherlab RS36',
@@ -168,6 +179,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2016244565/2012441964/Cipherlab RS36.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production', 'maintenance'],
   },
   {
     productName: 'Zebra WS50',
@@ -182,6 +194,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2016631942/2012441964/zebra ws50.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production', 'maintenance'],
   },
   {
     productName: 'ACD HasciSE',
@@ -196,6 +209,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2017010790/2012441964/ACD HasciSE.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production'],
   },
   {
     productName: 'Casio ET-L10',
@@ -210,6 +224,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2017181285/2012441964/casio_et_l10@2x.jpg',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production', 'Beverage logistics', 'Field Service'],
   },
   {
     productName: 'Honeywell ScanPal EDA10A',
@@ -224,6 +239,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2017246317/2012441964/Honeywell ScanPal EDA10A.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production', 'maintenance', 'Field Service'],
   },
   {
     productName: 'Point Mobile PM30',
@@ -238,6 +254,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2017832970/2012441964/ponit_mobilePM30.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production', 'Beverage logistics', 'Field Service'],
   },
   {
     productName: 'Samsung Xcover 5',
@@ -252,6 +269,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2018426427/2012441964/Samsung Xcover 5.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Beverage logistics'],
   },
   {
     productName: 'i.Safe Mobile IS530.1 ',
@@ -266,6 +284,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2018904232/2012441964/i.Safe IS530.1 mit Pistolengriff.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production', 'Explosion-proof'],
   },
   {
     productName: 'Honeywell ScanPal EDA61K',
@@ -280,6 +299,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2020025177/2012441964/honeywell_scanpal_eda61k@2x.jpg',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production', 'Beverage logistics'],
   },
   {
     productName: 'Samsung Tab Active 3',
@@ -294,6 +314,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2022407552/2012441964/Samsung Tab Active 3.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['maintenance', 'Field Service']
   },
   {
     productName: 'ProGlove MARK 3',
@@ -308,6 +329,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2023937341/2012441964/ProGlove MARK 3.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production'],
   },
   {
     productName: 'Datalogic Memor 20',
@@ -322,6 +344,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2025004846/2012441964/datalogic_memor20@2x.jpg',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production', 'Field Service'],
   },
   {
     productName: 'Datalogic Memor 10 Healthcare',
@@ -336,6 +359,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2028350172/2012441964/datalogic_memor10_healthcare@2x.jpg',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Healthcare']
   },
   {
     productName: 'Casio IT-G600 / IT-G650',
@@ -350,6 +374,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2030145514/2012441964/Casio IT G600_650.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production'],
   },
   {
     productName: 'Point Mobile PM560',
@@ -364,6 +389,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2034482939/2012441964/Point Mobile PM560.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production', 'Field Service'],
   },
   {
     productName: 'Gigaset GX290 Plus',
@@ -378,6 +404,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2035087401/2012441964/Gigaset GX290 plus.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Beverage logistics'],
   },
   {
     productName: 'Honeywell Dolphin CK65',
@@ -392,6 +419,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2035734119/2012441964/Honeywell Dolphin CK65.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production', 'Explosion-proof'],
   },
   {
     productName: 'CAT S75',
@@ -406,6 +434,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2036388291/2012441964/CAT S75.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Beverage logistics', 'Healthcare'],
   },
   {
     productName: 'Honeywell ScanPal EDA52 HC',
@@ -420,6 +449,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2036806814/2012441964/Honeywell EDA52HC.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Healthcare']
   },
   {
     productName: 'ProGlove MARK Display',
@@ -434,6 +464,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2038365215/2012441964/ProGlove Mark Display.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production'],
   },
   {
     productName: 'Datalogic Memor K',
@@ -448,6 +479,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2038742226/2012441964/Datalogic Memor K.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production', 'Beverage logistics'],
   },
   {
     productName: 'Panasonic Toughbook S1',
@@ -462,6 +494,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2038944939/2012441964/Panasonic Toughbook S1.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production', 'maintenance', 'Field Service'],
   },
   {
     productName: 'Honeywell Dolphin CT60 XP',
@@ -476,6 +509,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2039480267/2012441964/honeywell_dolphin_ct60@2x.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production', 'Field Service'],
   },
   {
     productName: 'Keyence BT-A700',
@@ -490,6 +524,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2041705648/2012441964/Keyence BT-A700.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production'],
   },
   {
     productName: 'Feig HyWEAR compact xT',
@@ -504,6 +539,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2043918401/2012441964/Feig HyWear compact xT.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production'],
   },
   {
     productName: 'Panasonic Toughbook A3',
@@ -518,6 +554,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2043949983/2012441964/panasonic_fz-a3@2x.jpg',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['maintenance', 'Field Service'],
   },
   {
     productName: 'Zebra TC8300',
@@ -532,6 +569,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2044520301/2012441964/zebra_tc8300@2x.jpg',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production'],
   },
   {
     productName: 'Zebra MC9300',
@@ -546,6 +584,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2051671743/2012441964/zebra mc9300.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production'],
   },
   {
     productName: 'i.Safe Mobile IS655.2',
@@ -560,6 +599,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2052054549/2012441964/i.safe IS655.2.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production', 'Beverage logistics', 'Explosion-proof'],
   },
   {
     productName: 'Zebra ZQ521',
@@ -574,6 +614,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2052768094/2012441964/Zebra ZQ521.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production', 'Beverage logistics', 'maintenance', 'Field Service'],
   },
   {
     productName: 'Point Mobile PM351',
@@ -588,6 +629,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2053890576/2012441964/PM351.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production'],
   },
   {
     productName: 'Point Mobile PM86',
@@ -602,6 +644,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2053950471/2012441964/Point Mobile Pm86.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production', 'Beverage logistics'],
   },
   {
     productName: 'Zebra ET60/ET65 Tablet',
@@ -616,6 +659,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2055003499/2012441964/Zebra ET60.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production', 'maintenance', 'Field Service'],
   },
   {
     productName: 'Getac ZX70',
@@ -630,6 +674,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2056126657/2012441964/getac_zx70@2x.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production', 'Explosion-proof', 'Field Service'],
   },
   {
     productName: 'Honeywell Dolphin CT40 HC',
@@ -644,6 +689,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2057675010/2012441964/honeywell_dolphin_ct40_hc@2x.jpg',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production', 'Healthcare'],
   },
   {
     productName: 'Honeywell ScanPal EDA51K',
@@ -658,6 +704,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2057808709/2012441964/Honeywell ScanPal EDA51K.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Field Service']
   },
   {
     productName: 'Honeywell ScanPal EDA57',
@@ -672,6 +719,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2058590904/2012441964/HoneywellEDA57-_.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production', 'Beverage logistics'],
   },
   {
     productName: 'Point Mobile PM451',
@@ -686,6 +734,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2061178735/2012441964/Point Mobile PM451.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production', 'maintenance', 'Field Service'],
   },
   {
     productName: 'Cipherlab RK95',
@@ -700,6 +749,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2065492285/2012441964/cipherlab_rk95@2x.jpg',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production'],
   },
   {
     productName: 'Bixolon XM7-40',
@@ -714,6 +764,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2066100301/2012441964/bixolon xm7-40.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production', 'Beverage logistics', 'maintenance', 'Field Service'],
   },
   {
     productName: 'i.Safe Mobile IS910.1',
@@ -728,6 +779,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2067313977/2012441964/i.Safe IS910.1.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production', 'maintenance', 'Explosion-proof', 'Field Service'],
   },
   {
     productName: 'Datalogic Memor 1',
@@ -741,6 +793,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2068409388/2012441964/datalogic_memor1@2x.jpg',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production', 'Beverage logistics'],
   },
   {
     productName: 'Point Mobile PM90',
@@ -755,6 +808,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2069151743/2012441964/Point Mobile PM90.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production', 'Beverage logistics'],
   },
   {
     productName: 'Zebra MC9400/9450',
@@ -769,6 +823,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2069262532/2012441964/Zebra_MC9400u.450.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production', 'Beverage logistics'],
   },
   {
     productName: 'Honeywell 8675i',
@@ -783,6 +838,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2069644062/2012441964/Honeywell 8675i.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production'],
   },
   {
     productName: 'Zebra DS3678-SR',
@@ -797,6 +853,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2070060243/2012441964/Zebra DS3678-SR.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production'],
   },
   {
     productName: 'Advantech DLT-V72',
@@ -811,6 +868,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2070900504/2012441964/advantech_dlt-v72@2x.jpg',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production'],
   },
   {
     productName: 'Zebra ZQ220',
@@ -825,6 +883,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2071322289/2012441964/Zebra ZQ220.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production', 'maintenance', 'Field Service'],
   },
   {
     productName: 'Cipherlab RS51',
@@ -839,6 +898,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2072297539/2012441964/cipherlab_rs51@2x.jpg',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production', 'Beverage logistics'],
   },
   {
     productName: 'Point Mobile PM3',
@@ -853,6 +913,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2074536714/2012441964/Point Mobile PM3.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production', 'maintenance'],
   },
   {
     productName: 'Keyence DX-A400',
@@ -867,6 +928,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2075335800/2012441964/Keyence DX-A400 new.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production', 'Beverage logistics'],
   },
   {
     productName: 'Newland MT90 Orca III',
@@ -881,6 +943,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2077544347/2012441964/Newland Orca MT90 III.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production', 'Beverage logistics'],
   },
   {
     productName: 'Zebra MC2200',
@@ -895,6 +958,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2077962878/2012441964/Zebra mc 2200.2.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production'],
   },
   {
     productName: 'Zebra HC20/50',
@@ -909,6 +973,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2079865932/2012441964/Zebra HC20_50.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Healthcare']
   },
   {
     productName: 'ACD M2Smart',
@@ -923,6 +988,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2080709885/2012441964/ACD M2 smart.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production', 'maintenance'],
   },
   {
     productName: 'Advantech AIM-65',
@@ -937,6 +1003,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2080815179/2012441964/advantech_aim65@2x.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production', 'Field Service'],
   },
   {
     productName: 'Samsung XCover Pro',
@@ -951,6 +1018,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2081180166/2012441964/samsung xcover pro.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Beverage logistics']
   },
   {
     productName: 'iData T2',
@@ -965,6 +1033,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2082619295/2012441964/iData T2.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production', 'Beverage logistics'],
   },
   {
     productName: 'Keyence DX-A600',
@@ -979,6 +1048,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2082806452/2012441964/Keyence DX-A600.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production', 'Beverage logistics', 'maintenance'],
   },
   {
     productName: 'ProGlove MARK LEO',
@@ -993,6 +1063,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2083456343/2012441964/ProGlove Mark LEO.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production'],
   },
   {
     productName: 'Zebra TC52ax',
@@ -1007,6 +1078,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2083848334/2012441964/TC52ax.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production', 'Beverage logistics', 'Field Service'],
   },
   {
     productName: 'Honeywell CW45',
@@ -1021,6 +1093,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2084530641/2012441964/Honeywell CW45.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production', 'maintenance'],
   },
   {
     productName: 'Zebra TC73/78',
@@ -1035,6 +1108,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2087429470/2012441964/Zebra TC73_78.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production', 'maintenance'],
   },
   {
     productName: 'Honeywell ScanPal EDA71',
@@ -1049,6 +1123,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2087505580/2012441964/Scanpal EDA71.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Beverage logistics', 'maintenance', 'Field Service']
   },
   {
     productName: 'Advantech AIM78S ',
@@ -1063,6 +1138,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2088384403/2012441964/Advantech Aim78s.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production', 'maintenance', 'Field Service'],
   },
   {
     productName: 'Panasonic Toughbook N1',
@@ -1077,6 +1153,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2089030196/2012441964/panasonic_toughbook_fz-n1@2x.jpg',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production', 'Beverage logistics'],
   },
   {
     productName: 'Zebra TC53/58',
@@ -1091,6 +1168,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2093602749/2012441964/Zebra TC58und53.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production', 'Beverage logistics'],
   },
   {
     productName: 'KoamTac KDC180H',
@@ -1105,6 +1183,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2093665691/2012441964/KoamTac KDC180H.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production'],
   },
   {
     productName: 'Zebra ZQ511',
@@ -1119,6 +1198,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2093721521/2012441964/Zebra ZQ511.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production', 'Beverage logistics', 'maintenance', 'Field Service'],
   },
   {
     productName: 'Zebra TC22/TC27',
@@ -1133,6 +1213,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2093792001/2012441964/Zebra TC22.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production', 'Beverage logistics'],
   },
   {
     productName: 'Zebra XSLATE L10',
@@ -1147,6 +1228,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2095159291/2012441964/zebra_xslate_l10@2x.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production', 'maintenance', 'Field Service'],
   },
   {
     productName: 'Honeywell Dolphin CT47',
@@ -1161,6 +1243,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2096350358/2012441964/HoneywellCT47_-.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production', 'maintenance', 'Field Service'],
   },
   {
     productName: 'Zebra TC57x',
@@ -1175,6 +1258,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2097486652/2012441964/zebra_tc57@2x.jpg',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production', 'Field Service'],
   },
   {
     productName: 'Newland MT95 Kambur Pro',
@@ -1189,6 +1273,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2097490841/2012441964/Newland MT95.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production', 'maintenance'],
   },
   {
     productName: 'CAT S42',
@@ -1203,6 +1288,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2097708217/2012441964/CAT S42.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production', 'Beverage logistics'],
   },
   {
     productName: 'Samsung Tab A SM-T595',
@@ -1217,6 +1303,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2097784761/2012441964/Samsung Tab A SM-T595N.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production', 'maintenance', 'Field Service'],
   },
   {
     productName: 'Point Mobile PM67',
@@ -1231,6 +1318,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2098788192/2012441964/Point Mobile PM67.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['Warehouse & Production', 'Field Service'],
   },
   {
     productName: 'Samsung Tab Active 4 Pro',
@@ -1245,6 +1333,7 @@ export const productListConfig: TProduct[] = [
       'https://skystatic08.atmos.id/11018/2049634327/2099471937/2012441964/Samsung tab active 4 pro.png',
     isFavorite: true,
     isRentalAvailable: true,
+    operationArea: ['maintenance', 'Field Service']
   },
 ];
 

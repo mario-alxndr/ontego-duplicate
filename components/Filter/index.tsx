@@ -7,7 +7,7 @@ import { createRoot } from 'react-dom/client'
 import { useRanger, Ranger } from '@tanstack/react-ranger'
 
 // Component
-import { Chip } from '../ChipSelect';
+import { Chip } from '../Chip';
 
 // Lib
 import { DEVICE_TYPE_OPTION, MANUFACTURER_OPTION, OPERATION_AREA_OPTION, SELECTION_OPTION } from '@/lib/constant/options';
