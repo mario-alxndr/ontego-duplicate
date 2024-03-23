@@ -129,7 +129,9 @@ export const Body = () => {
         weight={weight}
         onChangeWeight={handleChangeWeight}
       />
-      <ListItem />
+      <ListItem
+        filterredScrappedData={filterredScrappedData}
+      />
     </div>
   )
 };

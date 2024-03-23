@@ -1,0 +1,9 @@
+.list_item_container {
+  margin: 24px 0;
+  display: block;
+}
+
+.list_item_content {
+  display: flex;
+  justify-content: center;
+}
