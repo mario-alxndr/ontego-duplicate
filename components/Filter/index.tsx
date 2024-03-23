@@ -6,7 +6,7 @@ import cn from 'classnames';
 
 // Component
 import { Chip } from '../Chip';
-// import { InputRange } from '../InputRange';
+import { InputRange } from '../InputRange';
 
 // Lib
 import { DEVICE_TYPE_OPTION, MANUFACTURER_OPTION, OPERATION_AREA_OPTION, SELECTION_OPTION } from '@/lib/constant/options';
@@ -15,7 +15,7 @@ import { DEVICE_TYPE_OPTION, MANUFACTURER_OPTION, OPERATION_AREA_OPTION, SELECTI
 import styles from './index.module.css';
 
 type TFilter = {
-  price: ReadonlyArray<number>,
+  price: number[],
   selection: string[],
   selectedDeviceType: string[],
   selectedManufacturer: string[],
@@ -24,10 +24,10 @@ type TFilter = {
   onChangeDeviceType: (newValue: string[]) => void,
   onChangeManufactuer: (newValue: string[]) => void,
   onChangeOperationArea: (newValue: string[]) => void,
-  onChangePrice: (newValue: ReadonlyArray<number>) => void;
-  onChangeWeight: (newValue: ReadonlyArray<number>) => void;
+  onChangePrice: (newValue: number[]) => void;
+  onChangeWeight: (newValue: number[]) => void;
   onClickResetFilter: () => void,
-  weight: ReadonlyArray<number>,
+  weight: number[],
 };
 
 export const Filter = (props: TFilter) => {
@@ -178,15 +178,24 @@ export const Filter = (props: TFilter) => {
             })}
           </div>
         </div>
-        {/* <div className={styles.filter_range_container}>
-          <InputRange
+        <div className={styles.filter_range_container}>
+          <InputRange 
             min={0}
-            max={50}
-            stepSize={10}
-            values={price}
-            onChangeValue={onChangePrice}
+            max={3500}
+            step={20}
+            value={price} 
+            onChange={onChangePrice}
+            title={'Price'}
           />
-        </div> */}
+          <InputRange 
+            min={35}
+            max={1300}
+            step={20}
+            value={weight} 
+            onChange={onChangeWeight}
+            title={'Weight'}
+          />
+        </div>
       </div>
       <div className={styles.filter_bottom}>
         <p className={styles.filter_caption}>All information/prices without guarantee</p>

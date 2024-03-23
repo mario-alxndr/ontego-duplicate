@@ -9,9 +9,10 @@ import { Chip } from '@/components/Chip';
 
 export interface ItemCardProps {
   item: TProduct;
+  onClick: () => void;
 }
 
-export const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
+export const ItemCard: React.FC<ItemCardProps> = ({ item, onClick }) => {
   const [hoverState, setHoverState] = React.useState(false);
   const handleOnMouseEnter = () => {
     setHoverState(true);
@@ -21,7 +22,7 @@ export const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
   };
 
   return (
-    <div className={styles.card_container}>
+    <div className={styles.card_container} onClick={() => onClick()}>
       {(item.isFavorite || item.isRentalAvailable) && (
         <div className={styles.chip_container}>
           {item.isRentalAvailable && (

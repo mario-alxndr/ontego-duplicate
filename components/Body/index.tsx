@@ -10,9 +10,11 @@ import { ListItem } from '../ListItem';
 // Data
 import { productListConfig } from '@/lib/data/scrappedData';
 
+// Type
+import { TProduct } from '@/lib/type/product';
+
 // Styles
 import styles from './index.module.css';
-import { TProduct } from '@/lib/type/product';
 
 export const Body = () => {
   // Filter State
@@ -20,10 +22,10 @@ export const Body = () => {
   const [selectedDeviceType, setSelectedDeviceType] = React.useState<string[]>([]);
   const [selectedManufacturer, setSelectedManufacturer] = React.useState<string[]>([]);
   const [selectedOperationArea, setSelectedOperationArea] = React.useState<string[]>([]);
-  const [price, setPrice] = React.useState<ReadonlyArray<number>>([
+  const [price, setPrice] = React.useState<number[]>([
     0, 3500,
   ])
-  const [weight, setWeight] = React.useState<ReadonlyArray<number>>([
+  const [weight, setWeight] = React.useState<number[]>([
     0, 1300,
   ])
 
@@ -50,11 +52,11 @@ export const Body = () => {
     setSelectedOperationArea([]);
   }
 
-  const handleChangePrice = (newValue: ReadonlyArray<number>) => {
+  const handleChangePrice = (newValue: number[]) => {
     setPrice(newValue)
   }
 
-  const handleChangeWeight = (newValue: ReadonlyArray<number>) => {
+  const handleChangeWeight = (newValue: number[]) => {
     setWeight(newValue)
   }
 
