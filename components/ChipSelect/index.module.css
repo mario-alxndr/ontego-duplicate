@@ -8,4 +8,14 @@
   padding: 3px 16px 5px 16px;
   border-radius: 16px;
   cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.chip_container:hover {
+  background: #d5d5d5;
+}
+
+.chip_container.active {
+  background: linear-gradient(210.75deg, #0077b6 0%, #00527f 100%) !important;
+  color: #ffffff;
 }

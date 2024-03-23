@@ -9,4 +9,3 @@ export type TProduct = {
   isFavorite: boolean;
   isRentalAvailable: boolean;
 };
-  

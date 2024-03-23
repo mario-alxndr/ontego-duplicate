@@ -5,12 +5,36 @@ import * as React from 'react';
 import cn from 'classnames';
 
 // Component
-import { Chip } from '../Chip';
+import { ChipSelect } from '../ChipSelect';
+
+// Lib
+import { DEVICE_TYPE_OPTION, MANUFACTURER_OPTION, OPERATION_AREA_OPTION, SELECTION_OPTION } from '@/lib/constant/options';
 
 // Styles
 import styles from './index.module.css';
 
-export const Filter = () => {
+type TFilter = {
+  selection: string[],
+  selectedDeviceType: string[],
+  selectedManufacturer: string[],
+  selectedOperationArea: string[],
+  onChangeSelection: (newValue: string[]) => void,
+  onChangeDeviceType: (newValue: string[]) => void,
+  onChangeManufactuer: (newValue: string[]) => void,
+  onChangeOperationArea: (newValue: string[]) => void,
+};
+
+export const Filter = (props: TFilter) => {
+  const {
+    selection,
+    selectedDeviceType,
+    selectedManufacturer,
+    selectedOperationArea,
+    onChangeSelection,
+    onChangeDeviceType,
+    onChangeManufactuer,
+    onChangeOperationArea,
+  } = props;
   const [isOpen, setIsOpen] = React.useState(false);
 
   const handleClickToggleFilter = () => {
@@ -26,57 +50,117 @@ export const Filter = () => {
       <div className={styles.filter_row}>
         <div className={styles.filter_row_content}>
           <p className={styles.filter_label}>Selection</p>
-          <Chip>All devices</Chip>
-          <Chip>Our favorites</Chip>
-          <Chip>Rental equipment</Chip>
+          {SELECTION_OPTION.map((selectionOption) => {
+            const { label, name } = selectionOption;
+            
+            const handleClickSelection = () => {
+              if(name === 'all') {
+                onChangeSelection(['all']);
+              } else if(selection.includes(name)) {
+                const newSelection = selection.filter((selectionOption) => selectionOption !== name);
+                onChangeSelection(newSelection);
+              } else {
+                const newSelection = selection.filter((selectionOption) => selectionOption !== 'all');
+                onChangeSelection([...newSelection, name]);
+              }
+            };
+
+            const isActive = selection.includes(name);
+
+            return (
+              <ChipSelect 
+                isActive={isActive}
+                label={label} 
+                name={name}
+                onClick={handleClickSelection}
+              />
+            )
+          })}
         </div>
       </div>
       <div className={styles.filter_row}>
         <div className={styles.filter_row_content}>
           <p className={styles.filter_label}>Device Type</p>
-          <Chip>handheld computer</Chip>
-          <Chip>Smartphone</Chip>
-          <Chip>Forklift terminal/tablet</Chip>
-          <Chip>Wearable/handheld scanner</Chip>
-          <Chip>Printer</Chip>
+          {DEVICE_TYPE_OPTION.map((selection) => {
+            const { label, name } = selection;
+            
+            const handleClickSelection = () => {
+              if(selectedDeviceType.includes(name)) {
+                const newSelection = selectedDeviceType.filter((selectionOption) => selectionOption !== name);
+                onChangeDeviceType(newSelection);
+              } else {
+                onChangeDeviceType([...selectedDeviceType, name]);
+              }
+            };
+
+            const isActive = selectedDeviceType.includes(name);
+
+            return (
+              <ChipSelect 
+                isActive={isActive}
+                label={label} 
+                name={name}
+                onClick={handleClickSelection}
+              />
+            )
+          })}
         </div>
       </div>
       <div className={additionalFilterClassnames}>
         <div className={styles.filter_row}>
           <div className={styles.filter_row_content}>
             <p className={styles.filter_label}>Manufacturer</p>
-            <Chip>ACD</Chip>
-            <Chip>Advantech</Chip>
-            <Chip>Bixolone</Chip>
-            <Chip>Casio</Chip>
-            <Chip>Cat</Chip>
-            <Chip>Cipherlab</Chip>
-            <Chip>Datalogic</Chip>
-            <Chip>Cowardly</Chip>
-            <Chip>Getac</Chip>
-            <Chip>Gigaset</Chip>
-            <Chip>Honeywell</Chip>
-            <Chip>i.Safe Mobile</Chip>
-            <Chip>iData</Chip>
-            <Chip>Keyence</Chip>
-            <Chip>KoemTac</Chip>
-            <Chip>Newland</Chip>
-            <Chip>Panasonic</Chip>
-            <Chip>Point Mobile</Chip>
-            <Chip>ProGlobe</Chip>
-            <Chip>Samsung</Chip>
-            <Chip>zebra</Chip>
+            {MANUFACTURER_OPTION.map((selection) => {
+              const { label, name } = selection;
+              
+              const handleClickSelection = () => {
+                if(selectedManufacturer.includes(name)) {
+                  const newSelection = selectedManufacturer.filter((selectionOption) => selectionOption !== name);
+                  onChangeManufactuer(newSelection);
+                } else {
+                  onChangeManufactuer([...selectedManufacturer, name]);
+                }
+              };
+
+              const isActive = selectedManufacturer.includes(name);
+
+              return (
+                <ChipSelect 
+                  isActive={isActive}
+                  label={label} 
+                  name={name}
+                  onClick={handleClickSelection}
+                />
+              )
+            })}
           </div>
         </div>
         <div className={styles.filter_row}>
           <div className={styles.filter_row_content}>
             <p className={styles.filter_label}>operation area</p>
-            <Chip>Warehouse & Production</Chip>
-            <Chip>Beverage logistics</Chip>
-            <Chip>maintenance</Chip>
-            <Chip>Field Service</Chip>
-            <Chip>Healthcare</Chip>
-            <Chip>Explosion proof</Chip>
+            {OPERATION_AREA_OPTION.map((selection) => {
+              const { label, name } = selection;
+              
+              const handleClickSelection = () => {
+                if(selectedOperationArea.includes(name)) {
+                  const newSelection = selectedOperationArea.filter((selectionOption) => selectionOption !== name);
+                  onChangeOperationArea(newSelection);
+                } else {
+                  onChangeOperationArea([...selectedOperationArea, name]);
+                }
+              };
+
+              const isActive = selectedOperationArea.includes(name);
+
+              return (
+                <ChipSelect 
+                  isActive={isActive}
+                  label={label} 
+                  name={name}
+                  onClick={handleClickSelection}
+                />
+              )
+            })}
           </div>
         </div>
       </div>
