@@ -68,3 +68,7 @@
   max-height: 0px;
   visibility: hidden;
 }
+
+.filter_range_container {
+  display: flex;
+}

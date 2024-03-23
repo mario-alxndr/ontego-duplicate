@@ -8,4 +8,5 @@ export type TProduct = {
   imageUrl: string;
   isFavorite: boolean;
   isRentalAvailable: boolean;
+  operationArea: string[];
 };

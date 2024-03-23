@@ -16,10 +16,12 @@ export const Body = () => {
   const [selectedDeviceType, setSelectedDeviceType] = React.useState<string[]>([]);
   const [selectedManufacturer, setSelectedManufacturer] = React.useState<string[]>([]);
   const [selectedOperationArea, setSelectedOperationArea] = React.useState<string[]>([]);
-  const [minPrice, setMinPrice] = React.useState<number>(0);
-  const [maxPrice, setMaxPrice] = React.useState<number>(3500);
-  const [minWeight, setMinWeight] = React.useState<number>(0);
-  const [maxWeight, setMaxWeight] = React.useState<number>(1300);
+  const [price, setValues] = React.useState<ReadonlyArray<number>>([
+    0, 3500,
+  ])
+  const [weight, setWeight] = React.useState<ReadonlyArray<number>>([
+    0, 1300,
+  ])
 
   const hanldeChangeSelection = (newValue: string[]) => {
     setSelection(newValue)

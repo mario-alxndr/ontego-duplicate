@@ -3,6 +3,8 @@
 // Node Modules
 import * as React from 'react';
 import cn from 'classnames';
+import { createRoot } from 'react-dom/client'
+import { useRanger, Ranger } from '@tanstack/react-ranger'
 
 // Component
 import { ChipSelect } from '../ChipSelect';
@@ -167,6 +169,9 @@ export const Filter = (props: TFilter) => {
             })}
           </div>
         </div>
+      </div>
+      <div className={styles.filter_range_container}>
+        
       </div>
       <div className={styles.filter_bottom}>
         <p className={styles.filter_caption}>All information/prices without guarantee</p>
