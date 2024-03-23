@@ -52,6 +52,8 @@ export const Filter = (props: TFilter) => {
     setIsOpen(!isOpen);
   };
 
+  console.log('isOpen', isOpen);
+
   const additionalFilterClassnames = cn(styles.additional_filter, {
     [styles.hide]: !isOpen
   });
@@ -178,16 +180,15 @@ export const Filter = (props: TFilter) => {
             })}
           </div>
         </div>
-        <div className={styles.filter_range_container}>
-          <InputRange 
+        {/* <div className={styles.filter_range_container}>
+          <InputRange
+            min={0}
+            max={3500}
+            stepSize={10}
             values={price}
             onChangeValue={onChangePrice}
           />
-          <InputRange 
-            values={weight}
-            onChangeValue={onChangeWeight}
-          />
-        </div>
+        </div> */}
       </div>
       <div className={styles.filter_bottom}>
         <p className={styles.filter_caption}>All information/prices without guarantee</p>
