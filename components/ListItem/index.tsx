@@ -31,10 +31,13 @@ export const ListItem = (props: TListItem) => {
     }
   }
 
+  const AdditionalScrapData = (Math.floor(filterredScrappedData.length / 4) + 1) * 4 - filterredScrappedData.length;
+  const additionalData = new Array(AdditionalScrapData).fill(undefined);
+
   return (
     <div className={styles.list_item_container}>
       <div className={styles.list_item_content}>
-        {filterredScrappedData.map((filterredData, index) => {
+        {[...filterredScrappedData, ...additionalData].map((filterredData, index) => {
           const itemDetailClassname = cn(styles.item_detail, {
             [styles.show]: typeof activeIndex === 'number' && (Math.floor(activeIndex / 4) === Math.floor(index / 4)),
           });
@@ -43,7 +46,10 @@ export const ListItem = (props: TListItem) => {
 
           return (
             <>
-              <ItemCard onClick={() => handleClickDetail(index)} key={`${filterredData}-${index}`} item={filterredData}/>
+              {!!filterredData ? (
+                <ItemCard onClick={() => handleClickDetail(index)} key={`${filterredData}-${index}`} item={filterredData}/>
+              ) : <div/> }
+              
               {((index + 1) % 4 === 0) && (
                 <div className={itemDetailClassname}>
                   <div className={styles.item_detail_content}>
