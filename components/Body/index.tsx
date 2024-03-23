@@ -7,8 +7,12 @@ import * as React from 'react';
 import { Filter } from '../Filter';
 import { ListItem } from '../ListItem';
 
+// Data
+import { productListConfig } from '@/app/scrappedData';
+
 // Styles
 import styles from './index.module.css';
+import { TProduct } from '@/lib/type/product';
 
 export const Body = () => {
   // Filter State
@@ -53,6 +57,58 @@ export const Body = () => {
   const handleChangeWeight = (newValue: ReadonlyArray<number>) => {
     setWeight(newValue)
   }
+
+  // Filter Data
+  const filterredScrappedData = React.useMemo(() => {
+    return productListConfig.filter((productRecord: TProduct) => {
+      // Selection Filter
+      let isMatchSelection = true;
+
+      if(selection.length === 2 && !productRecord.isFavorite && !productRecord.isRentalAvailable) isMatchSelection = false;
+      else if(selection[0] === 'favorites' && !productRecord.isFavorite) isMatchSelection = false;
+      else if(selection[0] === 'rental' && !productRecord.isRentalAvailable) isMatchSelection = false;
+
+      // Device
+      const isMatchDevice = true;
+
+      // // Manufacturer Option
+      const isMatchManufacturer = selectedManufacturer.length > 0 ? 
+        !!selectedManufacturer.find(
+          (selectedManufactur) => productRecord.productName.toLowerCase().includes(selectedManufactur.toLowerCase())
+        ) : 
+        true;
+    
+      // Operation Area
+      const isMatchOperationArea = selectedOperationArea.length > 0 ? 
+          productRecord.operationArea.filter((operationAreaData) => {
+            return selectedOperationArea.indexOf(operationAreaData) !== -1;
+          }).length > 0 ? true : false 
+        : true;
+
+      if(
+        // Selection Filter
+        isMatchSelection &&
+
+        // Manufacturer Filter
+        isMatchManufacturer &&
+
+        // Device Filter
+        isMatchDevice &&
+
+        // Operation Area Filter
+        isMatchOperationArea
+      ) {
+        return productRecord;
+      }
+    });
+  }, [
+    JSON.stringify(selection),
+    JSON.stringify(selectedDeviceType),
+    JSON.stringify(selectedManufacturer),
+    JSON.stringify(selectedOperationArea),
+  ]);
+
+  console.log('filterredScrappedData', filterredScrappedData);
 
   return (
     <div className={styles.body_container}>

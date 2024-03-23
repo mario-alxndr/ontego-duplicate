@@ -6,7 +6,7 @@ import cn from 'classnames';
 
 // Component
 import { Chip } from '../Chip';
-import { InputRange } from '../InputRange';
+// import { InputRange } from '../InputRange';
 
 // Lib
 import { DEVICE_TYPE_OPTION, MANUFACTURER_OPTION, OPERATION_AREA_OPTION, SELECTION_OPTION } from '@/lib/constant/options';
@@ -51,8 +51,6 @@ export const Filter = (props: TFilter) => {
   const handleClickToggleFilter = () => {
     setIsOpen(!isOpen);
   };
-
-  console.log('isOpen', isOpen);
 
   const additionalFilterClassnames = cn(styles.additional_filter, {
     [styles.hide]: !isOpen
@@ -183,7 +181,7 @@ export const Filter = (props: TFilter) => {
         {/* <div className={styles.filter_range_container}>
           <InputRange
             min={0}
-            max={3500}
+            max={50}
             stepSize={10}
             values={price}
             onChangeValue={onChangePrice}

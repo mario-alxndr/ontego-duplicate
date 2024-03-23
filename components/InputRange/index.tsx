@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import { useRanger, Ranger } from '@tanstack/react-ranger';
 
 type InputRangeProps = {
