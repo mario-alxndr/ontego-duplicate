@@ -1,3 +1,4 @@
+
 .inactive_filter {
   line-height: 20px;
   color: #abadb1;
@@ -8,6 +9,7 @@
   padding: 3px 16px 5px 16px;
   border-radius: 16px;
   cursor: pointer;
+  min-width: max-content;
 }
 
 .inactive_filter:hover {
@@ -20,6 +22,7 @@
   padding: 3px 16px 5px 16px;
   border-radius: 16px;
   cursor: pointer;
+  min-width: max-content;
 }
 
 .active_filter {

@@ -17,6 +17,7 @@
   opacity: 0;
   max-height: 0px;
   transition: all 0.5s ease-in-out;
+  position: relative;
 }
 
 .item_detail.show {
@@ -25,12 +26,13 @@
 }
 
 .item_detail_content {
-  display: flex;
-  gap: 48px;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: max-content 323px auto;
 }
 
 .item_title {
-  color: #2D333D;
+  color: #2d333d;
   font-family: Roboto;
   font-size: 20px;
   font-weight: 500;
@@ -38,15 +40,136 @@
 }
 
 .item_description {
+  color: #2d333d;
   text-align: left;
-  flex-basis: 40%
+  flex-basis: 40%;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.item_body {
+  color: #2d333d;
+  padding-left: 20px;
 }
 
 .list_item_description {
-  color: #383D47;
+  color: #383d47;
   font-family: Roboto;
   font-size: 14px;
   letter-spacing: 0.2px;
   line-height: 20px;
   font-weight: normal;
+}
+
+.item_our_assessment {
+  height: max-content;
+  padding: 20px;
+  border: 4px solid #009bd0;
+  -webkit-border-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZlcnNpb249JzEuMScgd2lkdGg9JzUwJyBoZWlnaHQ9JzUwJz48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9J3JlZGdyYWRpZW50Jz48c3RvcCBvZmZzZXQ9JzAnIHN0b3AtY29sb3I9JyMwMDc3QjYnLz48c3RvcCBvZmZzZXQ9JzEnIHN0b3AtY29sb3I9JyMwMEE3REQnLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48ZyBpZD0nTGF5ZXJfMSc+PHBhdGggZD0nTTAsMCBMNTAsMCBMNTAsNTAgTDAsNTAgTDAsMCB6JyBmaWxsPSd1cmwoI3JlZGdyYWRpZW50KScgd2lkdGg9JzEwMCUnIGhlaWdodD0nMTAwJScvPjwvZz48L3N2Zz4=)
+    10% stretch;
+  -moz-border-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZlcnNpb249JzEuMScgd2lkdGg9JzUwJyBoZWlnaHQ9JzUwJz48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9J3JlZGdyYWRpZW50Jz48c3RvcCBvZmZzZXQ9JzAnIHN0b3AtY29sb3I9JyMwMDc3QjYnLz48c3RvcCBvZmZzZXQ9JzEnIHN0b3AtY29sb3I9JyMwMEE3REQnLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48ZyBpZD0nTGF5ZXJfMSc+PHBhdGggZD0nTTAsMCBMNTAsMCBMNTAsNTAgTDAsNTAgTDAsMCB6JyBmaWxsPSd1cmwoI3JlZGdyYWRpZW50KScgd2lkdGg9JzEwMCUnIGhlaWdodD0nMTAwJScvPjwvZz48L3N2Zz4=)
+    10% stretch;
+  -o-border-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZlcnNpb249JzEuMScgd2lkdGg9JzUwJyBoZWlnaHQ9JzUwJz48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9J3JlZGdyYWRpZW50Jz48c3RvcCBvZmZzZXQ9JzAnIHN0b3AtY29sb3I9JyMwMDc3QjYnLz48c3RvcCBvZmZzZXQ9JzEnIHN0b3AtY29sb3I9JyMwMEE3REQnLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48ZyBpZD0nTGF5ZXJfMSc+PHBhdGggZD0nTTAsMCBMNTAsMCBMNTAsNTAgTDAsNTAgTDAsMCB6JyBmaWxsPSd1cmwoI3JlZGdyYWRpZW50KScgd2lkdGg9JzEwMCUnIGhlaWdodD0nMTAwJScvPjwvZz48L3N2Zz4=)
+    10% stretch;
+  border-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZlcnNpb249JzEuMScgd2lkdGg9JzUwJyBoZWlnaHQ9JzUwJz48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9J3JlZGdyYWRpZW50Jz48c3RvcCBvZmZzZXQ9JzAnIHN0b3AtY29sb3I9JyMwMDc3QjYnLz48c3RvcCBvZmZzZXQ9JzEnIHN0b3AtY29sb3I9JyMwMEE3REQnLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48ZyBpZD0nTGF5ZXJfMSc+PHBhdGggZD0nTTAsMCBMNTAsMCBMNTAsNTAgTDAsNTAgTDAsMCB6JyBmaWxsPSd1cmwoI3JlZGdyYWRpZW50KScgd2lkdGg9JzEwMCUnIGhlaWdodD0nMTAwJScvPjwvZz48L3N2Zz4=)
+    10% stretch;
+  box-sizing: border-box;
+  position: relative;
+  -webkit-transition: background 0.2s ease;
+  -o-transition: background 0.2s ease;
+  transition: background 0.2s ease;
+  color: #0077b6;
+  text-align: left;
+}
+
+.our_assessment_title {
+  margin-bottom: 15px;
+  color: #0077b6;
+  -webkit-transition: color 0.2s ease;
+  -o-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  line-height: 20px;
+  text-transform: none;
+  cursor: initial;
+}
+
+.our_assessment_body {
+  font-size: 18px;
+  line-height: 28px;
+  height: auto !important;
+}
+
+.item_operation_area {
+  display: flex;
+  gap: 5px;
+  max-width: 300px;
+  flex-flow: wrap;
+  column-gap: 15px;
+}
+
+.item_detail_close_icon {
+  position: absolute;
+  top: -35px;
+  right: 0px;
+  opacity: 1;
+  max-height: 14px;
+  overflow: visible;
+  background-image: url(https://ontego.de/images/commsult/graphic/X_large_overlay.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+  height: 14px;
+  width: 14px;
+  cursor: pointer;
+}
+
+.item_link_container {
+  position: absolute;
+  right: 15px;
+  z-index: 1;
+  pointer-events: auto;
+  display: flex;
+  cursor: pointer;
+}
+
+.item_link_container:hover > .item_link {
+  color: #00527f;
+}
+
+.item_link {
+  color: #0077b6;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.18px;
+  line-height: 26px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 0px;
+  border-bottom: 2px solid transparent;
+  position: relative;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  text-decoration: none !important;
+  margin-right: 18px;
+}
+
+.link_icon {
+  background-image: url('https://ontego.de/images/commsult/graphic/arrow_light_blue.svg');
+  background-repeat: no-repeat;
+  width: 26px;
+  height: 18px;
+  align-self: center;
+}
+
+.item_link_container:hover > .link_icon {
+  background-image: url('https://ontego.de/images/commsult/graphic/arrow_light_blue.svg');
 }
